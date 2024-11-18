@@ -5,7 +5,7 @@ use App\Http\Controllers\BookController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
-Route::get('/Enter', [BookController::class, 'Main'])->name('Main');
+Route::get('/nolimetangere', [BookController::class, 'Main'])->name('Main');
