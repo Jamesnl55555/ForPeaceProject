@@ -14,7 +14,7 @@
     <button id="prev-btn">
         <h1><</h1>
     </button>
-    <div id="book" class="book" id="book">
+    <div id="book" class="book">
         <!-- p1 -->
         <div id="p1" class="paper">
             <div class="front">
