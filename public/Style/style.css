@@ -3,7 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
+.hoverables{
+    color:blue;
+}
+.hoverables:hover{
+    color:green;
+}
+
 body{
     height: 100vh;
     display: flex;
@@ -16,9 +23,19 @@ body{
 .book{
     
     position: relative;
-    width: 350px;
-    height: 500px;
+    width: 450px;
+    height: 600px;
     transition: transform 0.5s;
+}
+.sidenotes{
+    width: 250px;
+    height: 40px;
+    position: relative;
+    transition: transform 0.5s;
+    background-color: blanchedalmond;
+}
+.hide{
+    display:none;
 }
 
 .paper{
@@ -29,16 +46,42 @@ body{
     left: 0;
     perspective: 1500px;
 }
-img{
+.cover{
     width: 95%;
     height: 95%;
     border-style:solid;
     border-color:rgb(128, 75, 6);
     display:block;
 }
-
+.rizal{
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    border-style:solid;
+    border-color:rgb(128, 75, 6);
+    display:block;
+}
+.content{
+    padding: 20px;
+    background-color:rgb(195, 201, 83);
+    width: 95%;
+    height: 95%;
+    margin: 5px;
+}
+div[class="content"]>h1{
+    font-weight: bold;
+    font-family: 'Times New Roman';
+}
+#ltr::first-letter{
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: larger;
+}
+p[class="hoverable"]{
+    margin: 0px;
+}
 .front, .back{
-    background-color:rgb(75, 51, 3);
+    background-color:rgb(111, 81, 20);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -87,6 +130,7 @@ button:hover{
 .flipped .back{
     transform: rotateY(-180deg);
 }
+
 /* stack */
 #p1{
     z-index: 3;

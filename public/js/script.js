@@ -1,9 +1,20 @@
 const prevbtn=document.querySelector("#prev-btn");
 const nextbtn=document.querySelector("#next-btn");
 const book=document.querySelector("#book");
+const sidenotes=document.querySelector("#sidenotes");
+const text=document.querySelectorAll(".hoverables");
 
+text.forEach(texts =>{
+    texts.addEventListener('mouseenter', function(){
+        sidenotes.textContent = this.getAttribute('data-note');
+    });
+    texts.addEventListener('mouseleave', function(){
+        sidenotes.textContent = 'Hover a word to see its meaning';
+    });
+})
 prevbtn.addEventListener("click", goPrevPage);
 nextbtn.addEventListener("click", goNextPage);
+
 
 const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
@@ -13,10 +24,13 @@ let currentLocation = 1;
 let numOfPapers = 3
 let maxLocation = numOfPapers + 1;
 
+
+
 function openBook(){
     book.style.transform = "translateX(50%)";
-    prevbtn.style.transform = "translateX(-180px)";
-    nextbtn.style.transform = "translateX(180px)";
+    prevbtn.style.transform = "translateX(-220px)";
+    nextbtn.style.transform = "translateX(220px)";
+    sidenotes.style.transform = "translateX(250px)";
 }
 
 function closeBook(isAtBeginning){
@@ -29,6 +43,7 @@ function closeBook(isAtBeginning){
     
     prevbtn.style.transform = "translateX(0px)";
     nextbtn.style.transform = "translateX(0px)";
+    sidenotes.style.transform = "translateX(0px)";
 }
 
 function goNextPage(){

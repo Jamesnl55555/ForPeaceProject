@@ -19,12 +19,16 @@
         <div id="p1" class="paper">
             <div class="front">
                 <div id="f1" class="front-cont">
-                    <img src="{{asset('image/cover.jpg')}}">
+                    <img src="{{asset('image/cover.jpg')}}" class="cover">
                 </div>
             </div>
             <div class="back">
                 <div id="f1" class="back-cont">
-                    <h1>Back 1</h1>
+                    <div class="content">
+                        <img src="{{asset('image/JoseRizal.jpg')}}" class="rizal">
+                        <br>
+                        <p><b>Name: </b>José Protacio Rizal Mercado y Alonso Realonda</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,7 +36,15 @@
         <div id="p2" class="paper">
             <div class="front">
                 <div id="f2" class="front-cont">
-                    <h1>Front 2</h1>
+                    <div class="content">
+                        <h1>Buod ng unang kabanata</h1>
+                        <p id="ltr">Isang malaking pagtitipon ang gaganapin sa bahay ni Don Santiago de los Santos o mas kilala sa tawag na Kapitan Tiago sa Kalye Anluwage upang salubungin ang isang binata na galing Europa.</p>
+                        <p>Sikat at malaki ang kanyang impluwensya dahil siya ang dating <a class="hoverables" data-note="Kahulugan: halal na pinuno">alkalde</a> ng kanilang lugar. Kilala din ito dahil sa pagiging matulungin sa mga mahihirap.</p>
+                        <p>Mabilis na kumalat ang balita ng pagtitipon sa maraming distrito ng Maynila hanggang sa loob ng Intramuros.</p>
+                        <p>Pagpasok palang sa bahay ay may sasalubong nang malaking hagdanan na nababalutan ng karpeta. Sa ikalawang palapag ay may makikitang mga porselanang Intsik na may iba’t-ibang kulay at disenyo na mas nakatawag ng pansin sa mga bisitang dumalo.</p>
+                        <p>Mapapakinggan ang magagandang tunog na gawa ng orkestra at mga kalansing ng mga pinggan at kubyertos. Sa gitna ng bulwagan ay may mahabang lamesa na kainan na puno ng adorno.</p>
+                    </div>
+                    
                 </div>
             </div>
             <div class="back">
@@ -58,5 +70,8 @@
     <button id="next-btn">
         <h1>></h1>
     </button>
+    <div class="sidenotes" id="sidenotes">    
+        <p>Hover a word to see its meaning</p> 
+    </div>
 </body>
 </html>
