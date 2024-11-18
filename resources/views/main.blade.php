@@ -19,7 +19,7 @@
         <div id="p1" class="paper">
             <div class="front">
                 <div id="f1" class="front-cont">
-                    <h1>Front 1</h1>
+                    <img src="{{asset('image/cover.jpg')}}">
                 </div>
             </div>
             <div class="back">

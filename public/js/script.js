@@ -38,6 +38,7 @@ function goNextPage(){
                 openBook();
                 paper1.classList.add("flipped");
                 paper1.style.zIndex= 1;
+                // closeBook();
                 break;
             case 2:
                 paper2.classList.add("flipped");
@@ -60,7 +61,7 @@ function goPrevPage(){
     if(currentLocation > 1){
         switch(currentLocation){
             case 2:
-                closeBook();
+                closeBook(true);
                 paper1.classList.remove("flipped");
                 paper1.style.zIndex= 3;
                 break;
@@ -69,6 +70,7 @@ function goPrevPage(){
                 paper2.style.zIndex= 2;
                 break;
             case 4:
+                openBook();
                 paper3.classList.remove("flipped");
                 paper3.style.zIndex= 1;
                 break;
