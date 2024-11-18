@@ -19,8 +19,14 @@ function openBook(){
     nextbtn.style.transform = "translateX(180px)";
 }
 
-function closeBook(){
-    book.style.transform = "translateX(0%)";
+function closeBook(isAtBeginning){
+    if(isAtBeginning){
+        book.style.transform = "translateX(0%)";
+    }
+    else{
+        book.style.transform = "translateX(100%)";
+    }
+    
     prevbtn.style.transform = "translateX(0px)";
     nextbtn.style.transform = "translateX(0px)";
 }
@@ -38,6 +44,7 @@ function goNextPage(){
                 paper2.style.zIndex= 2;
                 break;
             case 3:
+                openBook();
                 paper3.classList.add("flipped");
                 paper3.style.zIndex= 3;
                 closeBook();
