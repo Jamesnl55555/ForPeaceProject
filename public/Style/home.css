@@ -9,6 +9,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,9 +50,21 @@ nav ul li a:hover {
     color: #ffcc00;
 }
 
-section {
-    padding: 60px 20px;
+section{
+    position: relative;
     text-align: center;
-    margin-top: 50px;
     background-color: bisque;
+}
+
+section a h1{
+    color:rgb(2,3,6);
+    position: relative;
+
+}
+footer, footer h1{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    height: 3px;
+    background-color: black;
 }

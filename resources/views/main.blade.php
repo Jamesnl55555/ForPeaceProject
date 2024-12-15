@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="leftsidebar">
-        
+        <div><a class="leftbar" href="/"><h1>Home</h1></a></div>
     </div>
     <div class="centercontent">
         <button id="prev-btn">
@@ -584,7 +584,6 @@ Mula sa pagiging baryo ay naging nayon ang lugar. Ang pamumunong ito ang naging 
     
     <div class="sidenotes" id="sidenotes"> 
         <p></p> 
-       
     </div>
 
 </body>

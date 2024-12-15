@@ -54,6 +54,17 @@
     padding-top: 10px;
     background-image: url('/image/scroll.png');
 }
+.leftbar{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-style: solid;
+    text-align: center;
+    color: White;
+    border-color:rgb(128, 75, 6);
+    background-image: linear-gradient(red, green);
+
+}
 .sidenotes p{
     margin-top: 50px;
 }

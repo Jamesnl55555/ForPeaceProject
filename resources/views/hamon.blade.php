@@ -20,11 +20,30 @@
         </nav>
     </header>
     <main>
-    <section id="books">
-        <a href="/nolimetangere"><h1>Pumunta sa aklat</h1></a>
+    <section>
+        <a href="syn/1">
+            <h1>Ano ang sinonimo ng salita</h1>
+        </a>
     </section>
-    <section id="test">
-        <a href="/hamon"><h1>Mga hamon</h1></a>
+    <section>
+        <a>
+            <h1>Ano ang magkasalungat na salita</h1>
+        </a>
+    </section>
+    <section>
+        <a>
+            <hl>Pagsusulit na may pagpipilian ukol sa aklat na Noli Me Tangere</h1>
+        </a>
+    </section>
+    <section>
+        <a>
+            <h1>Isulat ang wastong sagot ukol sa aklat na nabasa</h1>
+        </a>
+    </section>
+    <section>
+        <a href="/halo">
+            <h1>Halong pagsusulit</h1>
+        </a>
     </section>
     </main>
     <footer><h1>Ang Aming Grupo</h1></footer>
