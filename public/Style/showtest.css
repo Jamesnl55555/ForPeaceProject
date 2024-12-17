@@ -1,0 +1,7 @@
+div{
+    display:block;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+    background-image: linear-gradient(pink, blue);
+}

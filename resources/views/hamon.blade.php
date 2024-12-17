@@ -21,7 +21,7 @@
     </header>
     <main>
     <section>
-        <a href="syn/1">
+        <a href="showtest">
             <h1>Ano ang sinonimo ng salita</h1>
         </a>
     </section>

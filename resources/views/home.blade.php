@@ -14,8 +14,13 @@
         <nav>
             <ul>
                 <li><a href="#books">Dashboard</a></li>
-                <li><a href="#about">Profile</a></li>
-                <li><a href="#team">Logout</a></li>
+                <li><a href="#about">Name: {{Auth::user()->name}}</a></li>
+                <li>   
+                    <form action="logout" method="post">
+                    @csrf
+                    <button type="submit">Logout</button>
+                    </form>
+                </li>
             </ul>
         </nav>
     </header>
