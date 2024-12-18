@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('tests', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('description');
-            $table->integer('score')->default(0);
-            $table->enum('type', ['synonym', 'antonym', 'multiple-choice', 'identification'])->nullable();
+            $table->integer('score')->default(0)->nullable();
+            $table->string('type');
+            $table->integer('question_quantity');
             $table->timestamps();
         });
     }

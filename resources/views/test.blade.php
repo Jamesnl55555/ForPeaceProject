@@ -8,17 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <header>Tests Taken</header>
+    <head>
+        <li>Tests Taken</li>
+        <li>
+            <a href="/taketest">Take a test</a>
+        </li>
+
+    </header>
     <main>
-        <div>
-            @foreach($test as $tests)
-                <a href="/syn/{{$tests->id}}">
+        
+        @foreach($test as $tests)
+            <div>
                     Name: {{$tests->name}}
                     <br>
                     Type: {{$tests->type}}
-                </a>
-            @endforeach
-        </div>
+                    <br>
+                    Score: {{$tests->score}}
+            </div>
+        @endforeach
+    
     </main>
     
 </body>

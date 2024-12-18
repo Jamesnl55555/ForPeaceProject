@@ -15,8 +15,8 @@ class TestSeeder extends Seeder
     {
         $testId = DB::table('tests')->insertGetId([
             'name'=> 'Test',
-            'description' => 'Multiple question type',
             'type' => 'multiple-choice',
+            'question_quantity' => '13',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -25,11 +25,12 @@ class TestSeeder extends Seeder
 
         $questions = [
             'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
-            'Ano ang kasingkahulugan ng aksidente?'=>'Sakuna',
             'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
-            'Ano ang kasingkahulugan ng gunita?'=> 'Alaala',
             'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
-            'Ano ang kasingkahulugan ng ulap?' => 'Alapaap',
+            'Ano ang kasingkahulugan ng batid' => 'Alam',
+            'Ano ang kasingkahulugan ng angal' => 'Reklamo',
+            'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
+            
         ];
         $allQuestions = array_keys($questions);
         $allAnswers = array_values($questions);
@@ -38,7 +39,7 @@ class TestSeeder extends Seeder
             $options = getRandomOptions($correctAnswer, $allAnswers);
 
             // Shuffle options to ensure random order
-            shuffle($options);
+
 
             // Insert the correct answer into a random position in the options array
             $correctIndex = array_rand($options);

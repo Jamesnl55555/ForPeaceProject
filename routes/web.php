@@ -22,7 +22,10 @@ Route::middleware('authentication')->group(function (){
     });
     Route::get('/syn/{testId}', [BookController::class, 'Synonym'])->name('Synonym');
     Route::get('/halo/{testId}', [BookController::class, 'Halo'])->name('Halo');
-    Route::post('/add', [BookController::class, 'Add'])->name('Add');
+    Route::post('/Add', [BookController::class, 'Add'])->name('Add');
     Route::get('/showtest', [BookController::class, 'showTest'])->name('showTest');
+    Route::get('/taketest', [BookController::class, 'takeTest'])->name('takeTest');
+    Route::post('/createst', [BookController::class, 'createst'])->name('createst');
+
     Route::post('logout', [BookController::class, 'logout'])->name('logout');
 });

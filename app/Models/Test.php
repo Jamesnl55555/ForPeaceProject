@@ -16,8 +16,8 @@ class Test extends Model
     }
     protected $fillable = [
         'name',
-        'description',
         'type',
+        'question_quantity',
         'score'
     ];
 }

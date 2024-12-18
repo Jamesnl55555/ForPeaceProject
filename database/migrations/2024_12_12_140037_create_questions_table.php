@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('test_id');
-            $table->text('text');
-            $table->enum('type', ['synonym', 'antonym', 'multiple-choice', 'identification']);
+            $table->string('text');
+            $table->string('type');
             $table->timestamps();
 
             $table->foreign('test_id')->references('id')->on('tests')->onDelete('cascade');
