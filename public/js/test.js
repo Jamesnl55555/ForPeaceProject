@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             button.style.display ="block"
         }
         else{
-            button.style.display ="block"
+            button.style.display ="none"
         }
     }
 
@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             container.style.display = "block";
         score = 0;
         input.value =score;
+        button.style.display ="none";
         });
     }
 });

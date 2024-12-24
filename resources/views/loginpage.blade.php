@@ -21,7 +21,6 @@
         @if($errors->any())
             <div class="alert alert-danger">
                 {{ $errors->first('email') }}
-                {{ $errors->first('password') }}
             </div>
         @endif
     </main>

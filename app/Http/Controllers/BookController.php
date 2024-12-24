@@ -25,7 +25,9 @@ class BookController extends Controller
             'email' => 'required',
             'password' => 'required'
         ]);
-        
+        if (User::where('email', $val['email'])->exists()){
+            return back()->withErrors(['email' => 'Email account is already made in this site']);
+        }
         $val['password'] = bcrypt($val['password']);
         $user = User::create($val);
         Auth::login($user);
@@ -71,17 +73,18 @@ class BookController extends Controller
         $validated = $request->validate([
             'score' => 'integer'
         ]);
-
+        $user = auth()->user();
         $tested = Test::findOrFail($request->test_id);
         $tested->score = $validated['score'];
         $tested->save();
         
-        $test = Test::all();
-        return view('test', ['test'=>$test]);
+        $test = $user->tests()->findOrFail($request->test_id);
+        return redirect()->route('showTest');
     }
 
     public function showTest(){
-        $test = Test::all();
+        $user = auth()->user();
+        $test = $user->tests()->get();
         return view('test', ['test'=>$test]);
     }
 
@@ -95,11 +98,13 @@ class BookController extends Controller
             'type' => 'required',
             'quantity' => 'required'
         ]);
+        
 
         $testId = DB::table('tests')->insertGetId([
             'name' => $val['name'],
             'type' => $val['type'],
             'question_quantity' => $val['quantity'],
+            'user_id' => auth()->id(),
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -119,15 +124,10 @@ class BookController extends Controller
         $seedData = [];
         foreach ($questions as $questionText => $correctAnswer) {
             $options = getRandomOptions($correctAnswer, $allAnswers);
-
-            // Shuffle options to ensure random order
-            shuffle($options);
-
-            // Insert the correct answer into a random position in the options array
-            $correctIndex = array_rand($options);
+            
+            $correctIndex = rand(0,count($options));
             array_splice($options, $correctIndex, 0, $correctAnswer);
-
-            // Format options for seeding into the database
+            shuffle($options);
             $formattedOptions = [];
             foreach ($options as $optionText) {
                 $formattedOptions[] = [

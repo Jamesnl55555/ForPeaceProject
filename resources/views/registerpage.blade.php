@@ -20,6 +20,11 @@
             <button type="submit">Register</button>
         </form>
         <a href="/loginpage">Already had an account? Login</a>
+        @if($errors->any())
+            <div class="alert alert-danger">
+                {{ $errors->first('email') }}
+            </div>
+        @endif
     </main>
 </body>
 </html>
