@@ -31,7 +31,7 @@
                     <br>
                     Type: {{$tests->type}}
                     <br>
-                    Score: {{$tests->score}}
+                    Score: {{$tests->score}} / {{$tests->question_quantity}}
             </div>
         @endforeach
     

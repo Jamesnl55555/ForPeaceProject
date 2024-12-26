@@ -18,9 +18,9 @@
                 <option value="Random">Random</option>
             </select>
             <select name="quantity" required>
-                <option value="option1">5</option>
-                <option value="option2">10</option>
-                <option value="option3">15</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
             </select>
             <button type="submit">Submit</button>
         </form>

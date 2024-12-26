@@ -85,6 +85,10 @@ class BookController extends Controller
     public function showTest(){
         $user = auth()->user();
         $test = $user->tests()->get();
+
+        if ($test->isEmpty()) {
+            return view('test', ['test' => null, 'message' => 'No tests available.']);
+        }
         return view('test', ['test'=>$test]);
     }
 
@@ -108,21 +112,72 @@ class BookController extends Controller
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-
-        $questions=[
-            'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
-            'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
-            'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
-            'Ano ang kasingkahulugan ng batid' => 'Alam',
-            'Ano ang kasingkahulugan ng angal' => 'Reklamo',
-            'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
-        ];
         
+        if($val['type'] == 'Synonyms'){
+            $questions=[
+                'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
+                'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
+                'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
+                'Ano ang kasingkahulugan ng batid' => 'Alam',
+                'Ano ang kasingkahulugan ng angal' => 'Reklamo',
+                'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
+            ];
+        }
+        elseif($val['type'] == 'Antonyms'){
+            $questions=[
+                'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
+                'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
+                'Ano ang kasinonimo ng alapaap?' => 'Lupa',
+                'Ano ang kasinonimo ng batid' => 'Di ko alam',
+                'Ano ang kasinonimo ng angal' => 'Gusto',
+                'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+            ];
+        }
+        else{
+            $questions=[
+                'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
+                'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
+                'Ano ang kasinonimo ng alapaap?' => 'Lupa',
+                'Ano ang kasinonimo ng batid' => 'Di ko alam',
+                'Ano ang kasinonimo ng angal' => 'Gusto',
+                'Ano ang kasinonimo ng leksyon' => 'Wag Aralin',
+                'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
+                'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
+                'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
+                'Ano ang kasingkahulugan ng batid' => 'Alam',
+                'Ano ang kasingkahulugan ng angal' => 'Reklamo',
+                'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
+
+            ];
+        }
+        
+
+        function shuff(array $questions){
+            $question = array_keys($questions);
+            shuffle($question);
+            $shuffl=[];
+            foreach($question as $quest){
+                $shuffl[$quest] = $questions[$quest];
+            }
+            return $shuffl;
+        }        
 
         $allQuestions = array_keys($questions);
         $allAnswers = array_values($questions);
+        $shuffQuestions = shuff($questions);
+        $limitQuestions =[];
+        
+        $limQ = array_keys($shuffQuestions);
+
+        for($i=0; $i < $val['quantity']; $i++){
+            $Q = $limQ[$i];
+            $limitQuestions[$Q] = $shuffQuestions[$Q];
+        }
+        
+
+
         $seedData = [];
-        foreach ($questions as $questionText => $correctAnswer) {
+        foreach ($limitQuestions as $questionText => $correctAnswer) {
             $options = getRandomOptions($correctAnswer, $allAnswers);
             
             $correctIndex = rand(0,count($options));
