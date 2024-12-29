@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Test;
 use App\Models\User;
-use App\Models\Option;
+use App\Models\Bookmark;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -58,7 +58,20 @@ class BookController extends Controller
 
     public function Main()
     {
-        return view('main');
+        $user = auth()->user();
+        $bookmark = $user->bookmarks()->get();
+        return view('main', compact('bookmark'));
+    }
+    public function bookmark(Request $request){
+        $b = $request->validate([
+            'page' => 'integer'
+        ]);
+        $user = auth()->user();
+        $bookmark = Bookmark::create(['user_id' => $user->id, 'page' => $b['page']]);
+        return response()->json([
+            'success' => true,
+            'bookmark' => $bookmark
+        ]);
     }
 
     public function synonym($testId)
@@ -87,7 +100,7 @@ class BookController extends Controller
         $test = $user->tests()->get();
 
         if ($test->isEmpty()) {
-            return view('test', ['test' => null, 'message' => 'No tests available.']);
+            return view('test', ['test' => collect(), 'message' => 'No tests available.']);
         }
         return view('test', ['test'=>$test]);
     }

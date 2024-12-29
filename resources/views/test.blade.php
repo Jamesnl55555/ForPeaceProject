@@ -24,16 +24,20 @@
                 <div class="alert alert-danger">
                     {{ $errors->first('message') }}
                 </div>
-            @endif
-        @foreach($test as $tests)
-            <div>
+        @endif
+        @if($test->isEmpty())
+        <p>No tests have been taken yet.</p>
+        @else
+            @foreach($test as $tests)
+                <div>
                     Name: {{$tests->name}}
                     <br>
                     Type: {{$tests->type}}
                     <br>
                     Score: {{$tests->score}} / {{$tests->question_quantity}}
-            </div>
-        @endforeach
+                </div>
+            @endforeach
+        @endif
     
     </main>
     

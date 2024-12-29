@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('Style/style.css')}}">
     <script src="{{asset('js/script.js')}}" defer></script>
@@ -12,6 +13,24 @@
 <body>
     <div class="leftsidebar">
         <div><a class="leftbar" href="/"><h1>Home</h1></a></div>
+        
+        <div class="bookmarks">
+            <form id="bmForm">
+            @csrf
+            <input type="number" id="bm" name="page" value="1">
+            <button type="submit">Bookmark</button>
+            </form>
+            <div id="bookmarkList">
+                
+                @foreach($bookmark as $bookmarks)
+                    <div>
+                        <a href="#" class="bmlink" data-page="{{$bookmarks->page}}">Page: {{$bookmarks->page}}<a>
+                    </div>
+                @endforeach
+                
+            </div>
+            
+        </div>
     </div>
     <div class="centercontent">
         <button id="prev-btn">

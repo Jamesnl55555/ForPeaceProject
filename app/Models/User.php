@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use App\Models\Test;
+use App\Models\Bookmark;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class User extends Authenticatable
@@ -21,6 +22,9 @@ class User extends Authenticatable
      */
     public function  tests(): HasMany{
         return $this->hasMany(Test::class);
+    }
+    public function  bookmarks(): HasMany{
+        return $this->hasMany(Bookmark::class);
     }
     protected $fillable = [
         'name',
