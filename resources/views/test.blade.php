@@ -15,7 +15,7 @@
             <a href="/taketest">Take a test</a>
         </li>
         <li>
-            <a href="/hamon">Back</a>
+            <a href="/">Back</a>
         </li>
 
     </header>

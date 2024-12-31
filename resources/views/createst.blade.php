@@ -15,6 +15,7 @@
             <select name="type" required>
                 <option value="Synonyms">Synonyms</option>
                 <option value="Antonyms">Antonyms</option>
+                <option value="Identifications">Identification</option>
                 <option value="Random">Random</option>
             </select>
             <select name="quantity" required>
@@ -24,6 +25,7 @@
             </select>
             <button type="submit">Submit</button>
         </form>
+        <a href="/">Back</a>
     </main>
 </body>
 </html>

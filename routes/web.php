@@ -18,9 +18,6 @@ Route::middleware('authentication')->group(function (){
 
 
     Route::get('/nolimetangere', [BookController::class, 'Main'])->name('Main');
-    Route::get('/hamon', function () {
-        return view('hamon');
-    });
     Route::get('/syn/{testId}', [BookController::class, 'Synonym'])->name('Synonym');
     Route::get('/halo/{testId}', [BookController::class, 'Halo'])->name('Halo');
     Route::post('/Add', [BookController::class, 'Add'])->name('Add');

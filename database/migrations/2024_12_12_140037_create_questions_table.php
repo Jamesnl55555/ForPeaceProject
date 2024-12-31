@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('test_id');
             $table->string('text');
+            $table->string('correct_answer')->nullable();
             $table->string('type');
             $table->timestamps();
 

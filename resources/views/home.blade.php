@@ -29,7 +29,7 @@
         <a href="/nolimetangere"><h1>Pumunta sa aklat</h1></a>
     </section>
     <section id="test">
-        <a href="/hamon"><h1>Mga hamon</h1></a>
+        <a href="showtest"><h1>Mga hamon</h1></a>
     </section>
     </main>
     <footer><h1>Ang Aming Grupo</h1></footer>

@@ -25,6 +25,7 @@ class Question extends Model
     protected $fillable = [
         'test_id',
         'text',
+        'correct_answer',
         'type',
     ];
 }

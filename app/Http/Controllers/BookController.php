@@ -125,18 +125,30 @@ class BookController extends Controller
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        
+        $SynQuestions=[
+            'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
+            'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
+            'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
+            'Ano ang kasingkahulugan ng batid' => 'Alam',
+            'Ano ang kasingkahulugan ng angal' => 'Reklamo',
+            'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
+        ];
+
+        $AntQuestions=[
+            'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
+            'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
+            'Ano ang kasinonimo ng alapaap?' => 'Lupa',
+            'Ano ang kasinonimo ng batid' => 'Di ko alam',
+            'Ano ang kasinonimo ng angal' => 'Gusto',
+            'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+        ];
         if($val['type'] == 'Synonyms'){
-            $questions=[
-                'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
-                'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
-                'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
-                'Ano ang kasingkahulugan ng batid' => 'Alam',
-                'Ano ang kasingkahulugan ng angal' => 'Reklamo',
-                'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
-            ];
+            $questions= $SynQuestions;
         }
         elseif($val['type'] == 'Antonyms'){
+            $questions= $AntQuestions;
+        }
+        elseif($val['type'] == 'Identifications'){
             $questions=[
                 'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
                 'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
@@ -147,21 +159,7 @@ class BookController extends Controller
             ];
         }
         else{
-            $questions=[
-                'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
-                'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
-                'Ano ang kasinonimo ng alapaap?' => 'Lupa',
-                'Ano ang kasinonimo ng batid' => 'Di ko alam',
-                'Ano ang kasinonimo ng angal' => 'Gusto',
-                'Ano ang kasinonimo ng leksyon' => 'Wag Aralin',
-                'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
-                'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
-                'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
-                'Ano ang kasingkahulugan ng batid' => 'Alam',
-                'Ano ang kasingkahulugan ng angal' => 'Reklamo',
-                'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
-
-            ];
+            $questions= array_merge($SynQuestions,$AntQuestions);
         }
         
 
@@ -191,6 +189,14 @@ class BookController extends Controller
 
         $seedData = [];
         foreach ($limitQuestions as $questionText => $correctAnswer) {
+            if( $val['type'] === 'Identifications'){
+                $seedData[] = [
+                    'text' => $questionText,
+                    'type' => $val['type'],
+                    'correct_answer' => $correctAnswer,
+                ];
+                continue;
+            }  
             $options = getRandomOptions($correctAnswer, $allAnswers);
             
             $correctIndex = rand(0,count($options));
@@ -216,19 +222,21 @@ class BookController extends Controller
             $questionId = DB::table('questions')->insertGetId([
                 'text' => $question['text'],
                 'type' => $question['type'],
+                'correct_answer' => $val['type'] === 'Identifications' ? $question['correct_answer'] : null,
                 'test_id' => $testId,
                 'created_at' => now(),
                 'updated_at' => now(),
-            ]);
-
-        foreach ($question['options'] as $option) {
-            DB::table('options')->insert([
-                'question_id' => $questionId,
-                'option_text' => $option['option_text'],
-                'status' => $option['status'],
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
+            ]);  
+        if($val['type'] !== 'Identifications'){
+            foreach ($question['options'] as $option) {
+                DB::table('options')->insert([
+                    'question_id' => $questionId,
+                    'option_text' => $option['option_text'],
+                    'status' => $option['status'],
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ]);
+        }
         }
         }
         return redirect()->route('Synonym', $testId);
