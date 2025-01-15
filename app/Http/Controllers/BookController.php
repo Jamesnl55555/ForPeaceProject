@@ -60,7 +60,19 @@ class BookController extends Controller
     {
         $user = auth()->user();
         $bookmark = $user->bookmarks()->get();
-        return view('main', compact('bookmark'));
+        $mind=[
+            'Hello' => "Hello {$user->name}, ano ang aking maitutulong?",
+            'Ano ang iyong pangalan?' => 'Ang pangalan ko ay tobY'
+        ];
+        $option = array_keys($mind);
+        $answer = array_values($mind);
+        return view('main', compact('bookmark', 'option', 'answer'));
+    }
+    public function response(Request $request){
+        $question = strtolower($request->input('question'));
+        $answer = $this->mind[$question] ?? 'Sorry, I don’t understand that.';
+
+        return response()->json(['question' => $question, 'answer' => $answer]);
     }
     public function bookmark(Request $request){
         $b = $request->validate([
@@ -142,6 +154,14 @@ class BookController extends Controller
             'Ano ang kasinonimo ng angal' => 'Gusto',
             'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
         ];
+        $IdnQuestions=[
+            'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
+            'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
+            'Ano ang kasinonimo ng alapaap?' => 'Lupa',
+            'Ano ang kasinonimo ng batid' => 'Di ko alam',
+            'Ano ang kasinonimo ng angal' => 'Gusto',
+            'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+        ];
         if($val['type'] == 'Synonyms'){
             $questions= $SynQuestions;
         }
@@ -149,17 +169,10 @@ class BookController extends Controller
             $questions= $AntQuestions;
         }
         elseif($val['type'] == 'Identifications'){
-            $questions=[
-                'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
-                'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
-                'Ano ang kasinonimo ng alapaap?' => 'Lupa',
-                'Ano ang kasinonimo ng batid' => 'Di ko alam',
-                'Ano ang kasinonimo ng angal' => 'Gusto',
-                'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
-            ];
+            $questions= $IdnQuestions;
         }
         else{
-            $questions= array_merge($SynQuestions,$AntQuestions);
+            $questions = array_merge($SynQuestions, $AntQuestions, $IdnQuestions);  
         }
         
 
@@ -189,14 +202,14 @@ class BookController extends Controller
 
         $seedData = [];
         foreach ($limitQuestions as $questionText => $correctAnswer) {
-            if( $val['type'] === 'Identifications'){
+            if( array_key_exists($questionText, $IdnQuestions)){
                 $seedData[] = [
                     'text' => $questionText,
-                    'type' => $val['type'],
+                    'type' => 'Identifications',
                     'correct_answer' => $correctAnswer,
+                    'options' => []
                 ];
-                continue;
-            }  
+            }  else{
             $options = getRandomOptions($correctAnswer, $allAnswers);
             
             $correctIndex = rand(0,count($options));
@@ -216,18 +229,18 @@ class BookController extends Controller
             ];
 
         }
-
+    }
         foreach ($seedData as $question) 
         {
             $questionId = DB::table('questions')->insertGetId([
                 'text' => $question['text'],
                 'type' => $question['type'],
-                'correct_answer' => $val['type'] === 'Identifications' ? $question['correct_answer'] : null,
+                'correct_answer' => $question['type'] === 'Identifications' ? $question['correct_answer'] : null,
                 'test_id' => $testId,
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);  
-        if($val['type'] !== 'Identifications'){
+        if($question['type'] !== 'Identifications' && isset($question['options'])){
             foreach ($question['options'] as $option) {
                 DB::table('options')->insert([
                     'question_id' => $questionId,

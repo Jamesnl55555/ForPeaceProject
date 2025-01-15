@@ -2,8 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+body{
+    cursor: url('/image/cursor.png') 16 16, pointer;
+}
+#floatext{
+    position: absolute;
+    display: none;
+    padding: 5px;
+    background-color: white;
+    border-style: double;
+    pointer-events: none;
+    z-index: 1000;
+}
 .hoverables{
     color:blue;
 }
@@ -167,5 +179,3 @@ button:hover{
 .flipped .back{
     transform: rotateY(-180deg);
 }
-
-/* stack */

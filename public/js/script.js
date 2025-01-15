@@ -5,12 +5,29 @@ const sidenotes=document.querySelector("#sidenotes");
 const text=document.querySelectorAll(".hoverables");
 const mark = document.getElementById("bm");
 const papers = document.querySelectorAll(".paper");
+const textfloat = document.getElementById('floatext');
+
+document.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', function (event) {
+        event.preventDefault();
+        const answer = this.getAttribute('data-answer'); 
+        document.getElementById('response').innerText = `[-_-] : ${answer}`; 
+    });
+});
+
+document.addEventListener('mousemove', function(event){
+    textfloat.style.left = event.pageX + 10 + 'px';
+    textfloat.style.top = event.pageY + 10 + 'px';
+})
 text.forEach(texts =>{
     texts.addEventListener('mouseenter', function(){
         sidenotes.textContent = this.getAttribute('data-note');
+        textfloat.style.display = 'block';
+        textfloat.textContent = this.getAttribute('data-note');
     });
     texts.addEventListener('mouseleave', function(){
-        sidenotes.textContent = '';
+        textfloat.style.display = 'none';
+        textfloat.textContent = '';
     });
 })
 prevbtn.addEventListener("click", goPrevPage);

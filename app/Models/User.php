@@ -10,6 +10,7 @@ use App\Models\Test;
 use App\Models\Bookmark;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
+
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -20,6 +21,7 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    
     public function  tests(): HasMany{
         return $this->hasMany(Test::class);
     }
