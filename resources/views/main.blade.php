@@ -21,8 +21,7 @@
             <input type="number" id="bm" name="page" value="1">
             <button type="submit">Bookmark</button>
             </form>
-            <div id="bookmarkList">
-                
+            <div id="bookmarkList">    
                 @foreach($bookmark as $bookmarks)
                     <div>
                         <a href="#" class="bmlink" data-page="{{$bookmarks->page}}">Page: {{$bookmarks->page}}<a>
@@ -118,15 +117,6 @@
                 <div class="back">
                     <div id="f4" class="back-cont">
                         <div class="content">
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="p5" class="paper">
-                <div class="front">
-                    <div id="f5" class="front-cont">
-                        <div class="content">
                         <h1>KABANATA 2: Si Crisostomo Ibarra</h1>
                             <p id="ltr">Dumating si Kapitan Tiyago at si Ibarra na luksang-luksa ang kasuotan. Ang lahat ng panauhin ay binati ni Kapitan Tiyago. Nabigla ang mga pari sa paghalik nito sa kanilang mga kamay kaya nakalimutan nilang siya ay bendisyunan. Samantala, si Padre Damaso ay namutla nang makilala si Ibarra.
 
@@ -139,17 +129,38 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-cont">
+                        <div class="content">
+                            <p> Nagpapasalamat ang Tinyente sapagkat dumating ang binata ng walang anumang masamang nangyari. Basag ang tinig ng Tinyente nang sabihin niya sa binata na ang nasa nito’y higit na maging mapalad sa kaniyang ama. Ayon sa kaniya, ang ama ni Ibarra ay isang taong mabait. Ang ganitong papuri ay pumawi sa masamang hinala ni Ibarra tungkol sa kahabag-habag na sinapit ng kaniyang ama.
+
+                            Ang pasulyap ni Padre Damaso sa Tinyente ay sapat na upang layuan niya ang binata. Naiwang mag-isa si Ibarra sa bulwagan ng walang kakilala.
+
+                            Tulad ng kaugaliang Aleman na natutuhan ni Ibarra buhat sa kaniyang pag-aaral sa Europa, ipinakilala niya ang kaniyang sarili sa iba pang mga panauhin. Ang mga babae ay hindi umimik sa kaniya; ang mga lalaki lamang ang nagpakilala rin sa kaniya. Nakilala niya ang isang binatang tumigil din sa pagsusulat.
+
+                            Malapit ng tawagin ang mga panauhin upang makapaghapunan. Lumapit si Kapitan Tinong kay Ibarra upang kumbidahin sa isang pananghalian kinabukasan. Tumanggi sa anyaya ang binata sapagkat nakatakda siyang magtungo sa San Diego sa araw na naturan.
+                            </p>  
+                        </div>
+                    </div>
+                </div>
                 <div class="back">
                     <div id="f5" class="back-cont">
                         <div class="content">
-                        <p> Nagpapasalamat ang Tinyente sapagkat dumating ang binata ng walang anumang masamang nangyari. Basag ang tinig ng Tinyente nang sabihin niya sa binata na ang nasa nito’y higit na maging mapalad sa kaniyang ama. Ayon sa kaniya, ang ama ni Ibarra ay isang taong mabait. Ang ganitong papuri ay pumawi sa masamang hinala ni Ibarra tungkol sa kahabag-habag na sinapit ng kaniyang ama.
+                            <h1>KABANATA 3: Ang Hapunan</h1>
+                            <p>Isa-isang nagtungo ang mga panauhin sa harap ng hapagkainan. Sa anyo ng kanilang mga mukha ay mahahalata ang kanilang mga pakiramdam. Siyang-siya si Padre Sibyla samantalang banas na banas naman si Padre Damaso. Sinisikaran niya ang lahat ng madaanan hanggang sa masiko niya ang isang kadete. Hindi naman umiimik ang Tinyente. Ang ibang bisita naman ay magiliw na nag-uusap at pinupuri ang masasarap na handa ni Kapitan Tiyago. Nainis naman si Doña Victorina sa Tinyente sapagkat natapakan ang kola ng kaniyang saya habang tinitignan nito ang pagkakulot ng kaniyang buhok.
 
-                        Ang pasulyap ni Padre Damaso sa Tinyente ay sapat na upang layuan niya ang binata. Naiwang mag-isa si Ibarra sa bulwagan ng walang kakilala.
+                                Sa may kabisera umupo si Ibarra. Ang magkabilang dulo naman ay pinagtatalunan ng dalawang pari kung sino sa kanila ang dapat na lumikmo roon.
 
-                        Tulad ng kaugaliang Aleman na natutuhan ni Ibarra buhat sa kaniyang pag-aaral sa Europa, ipinakilala niya ang kaniyang sarili sa iba pang mga panauhin. Ang mga babae ay hindi umimik sa kaniya; ang mga lalaki lamang ang nagpakilala rin sa kaniya. Nakilala niya ang isang binatang tumigil din sa pagsusulat.
+                                Sa tingin ni Padre Sibyla, si Padre Damaso ang dapat umupo roon dahil siya ang Padre Kumpesor ng pamilya ni Kapitan Tiyago. Ngunit, si Padre Sibyla naman ang iginigiit ng Paring Pransiskano. Katuwiran nito’y si Sibyla ang kura sa lugar na iyon, kung kaya’t siya ang karapat-dapat na maupo roon.
 
-                        Malapit ng tawagin ang mga panauhin upang makapaghapunan. Lumapit si Kapitan Tinong kay Ibarra upang kumbidahin sa isang pananghalian kinabukasan. Tumanggi sa anyaya ang binata sapagkat nakatakda siyang magtungo sa San Diego sa araw na naturan.
-                        </p>    
+                                Akmang uupo na si Sibyla nang mapansin niya ang Tinyente at nagkunwaring i-aalok ang upuan. Pero tumanggi ang Tinyente sapagkat umiiwas siyang mapagitnaan ng dalawang pari.
+
+                                Sa mga panauhin, tanging si Ibarra lamang ang nakaisip na anyayahan si Kapitan Tiyago. Ngunit tulad ng may karaniwang handaan, magalang na tumanggi ang Kapitan sabay sabing, “Huwag mo akong alalahanin.”
+
+                                Sinimulan ng idulot ang pagkain. Naragdagan ang pagpupuyos ng damdamin ni Padre Damaso nang ihain ang tinola. Paano ay puro upo, leeg, at pakpak ng manok ang napunta sa kaniya, samantalang ang kay Ibarra ay puro masasarap na bahagi ng tinola. Hindi alam ng pari kung sadyang ipinaluto ng Kapitan ang manok para lamang kay Ibarra.
+                                </p>
                         </div>
                     </div>
                 </div>

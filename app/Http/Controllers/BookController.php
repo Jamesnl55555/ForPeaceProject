@@ -114,10 +114,11 @@ class BookController extends Controller
             'page' => 'integer'
         ]);
         $user = auth()->user();
-        $bookmark = Bookmark::create(['user_id' => $user->id, 'page' => $b['page']]);
+        Bookmark::create(['user_id' => $user->id, 'page' => $b['page']]);
+        $bookmarks = Bookmark::where('user_id', $user->id)->get();
         return response()->json([
             'success' => true,
-            'bookmark' => $bookmark
+            'bookmarks' => $bookmarks
         ]);
     }
 

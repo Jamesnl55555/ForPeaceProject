@@ -97,6 +97,37 @@ function goPrevPage(){
     }
     mark.value =currentLocation;
 }
+function navigateToPage(targetPage) {
+    for (let i = 1; i <= numOfPapers; i++) {
+        const page = document.querySelector(`#p${i}`);
+        if (i < targetPage) {
+            page.classList.add('flipped');
+            page.style.zIndex = i;
+        } else {
+            page.classList.remove('flipped');
+            page.style.zIndex = numOfPapers - i + 1;
+        }
+    }
+    currentLocation = targetPage;
+    mark.value = currentLocation;
+
+    if (currentLocation === 1) {
+        closeBook(true);
+    } else if (currentLocation === maxLocation) {
+        closeBook(false);
+    } else {
+        openBook();
+    }
+}
+document.addEventListener('DOMContentLoaded', () =>{
+    document.querySelectorAll('.bmlink').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetPage = parseInt(this.getAttribute('data-page'));
+            navigateToPage(targetPage);
+        });
+    });
+});
 document.querySelector('#bmForm').addEventListener('submit', function (e) {
     e.preventDefault();
     const val = mark.value;
@@ -114,47 +145,10 @@ document.querySelector('#bmForm').addEventListener('submit', function (e) {
             console.log('Response from server:', data);
 
             if (data.success) {
-                const bookmarkList = document.querySelector('#bookmarkList');
-                const newBookmark = document.createElement('div');
-                const newLink = document.createElement('a');
-                newLink.href = '#';
-                newLink.classList.add('bmlink');
-                newLink.setAttribute('data-page', data.bookmark.page);
-                newLink.textContent = `Page: ${data.bookmark.page}`;
-                newBookmark.appendChild(newLink);
-                bookmarkList.appendChild(newBookmark);
-
-                console.log('Bookmark added to DOM:', newLink);
-
-                newLink.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetPage = parseInt(newLink.getAttribute('data-page'));
-                    for (let i = 1; i <= numOfPapers; i++) {
-                        const page = document.querySelector(`#p${i}`);
-                        if (i < targetPage) {
-                            page.classList.add('flipped');
-                            page.style.zIndex = i;
-                        }else if (i === targetPage) {
-                            page.classList.remove('flipped');
-                            page.style.zIndex = numOfPapers - i + 1;
-                        }else {
-                            page.classList.remove('flipped');
-                            page.style.zIndex = numOfPapers - i + 1;
-                        }
-                    }
-                    currentLocation = targetPage;
-                    mark.value = currentLocation;
-                    if (currentLocation === 1) {
-                        closeBook(true);
-                    } else if (currentLocation === maxLocation) {
-                        closeBook(false);
-                    } else {
-                        openBook();
-                    }
-                });
-
-                mark.value = '';
                 alert('Bookmark Successfully added');
+                updateBM(data.bookmarks);
+                mark.value = '';
+                
             } else {
                 alert('Failed to add bookmark.');
             }
@@ -163,3 +157,27 @@ document.querySelector('#bmForm').addEventListener('submit', function (e) {
             console.error('Error:', error);
         });
 });
+function updateBM(bookmarks){
+    const bookmarkList = document.querySelector('#bookmarkList');
+    bookmarkList.innerHTML = '';
+
+    bookmarks.forEach(bookmark => {
+        const bookmarkDiv = document.createElement('div');
+        const bookmarkLink = document.createElement('a');
+
+        bookmarkLink.href = '#';
+        bookmarkLink.classList.add('bmlink');
+        bookmarkLink.setAttribute('data-page', bookmark.page);
+        bookmarkLink.textContent = `Page: ${bookmark.page}`;
+
+        bookmarkDiv.appendChild(bookmarkLink);
+        bookmarkList.appendChild(bookmarkDiv);
+
+        bookmarkLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetPage = parseInt(bookmark.page);
+            navigateToPage(targetPage);
+        });
+    });
+
+}
