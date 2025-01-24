@@ -3,17 +3,27 @@
 }
 
 body {
+    cursor: url('/image/cursor.png') 16 16, pointer;
     height: 100vh;
+    display: flex;
     background-image: url('/image/bg1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     flex-wrap: wrap;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
+}
+.tfloat{
+    position: absolute;
+    display: none;
+    padding: 5px;
+    background-color: white;
+    border-style: double;
+    pointer-events: none;
+    z-index: 1000;
 }
 
 header {
@@ -53,18 +63,53 @@ nav ul li a:hover {
 section{
     position: relative;
     text-align: center;
-    background-color: bisque;
+    background-color: rgb(179, 212, 177);
 }
 
-section a h1{
-    color:rgb(2,3,6);
+section a {
+    text-decoration: none;
+    color:rgb(185, 60, 18);
     position: relative;
-
 }
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    color:aqua;
+}
+.ftext{
+    rotate: 330deg;
+    animation: bobbing 2s infinite;
+    position: relative;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes bobbing{
+    0%, 100%{
+        font-size: small;
+    }
+    50%{
+        font-size: large;
+    }
+}
+
 footer, footer h1{
     position:absolute;
     width: 100%;
     bottom: 0;
     height: 3px;
     background-color: black;
+}
+
+.Text{
+    color: rgb(140, 140, 60);
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(62, 68, 74);
+    border-style: double;
+    padding: 1%;
 }

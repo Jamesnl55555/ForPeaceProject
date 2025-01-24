@@ -12,6 +12,32 @@ use Illuminate\Support\Facades\DB;
 
 class BookController extends Controller
 {
+    private $SynQuestions=[
+        'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
+        'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
+        'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
+        'Ano ang kasingkahulugan ng batid' => 'Alam',
+        'Ano ang kasingkahulugan ng angal' => 'Reklamo',
+        'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
+    ];
+
+    private $AntQuestions=[
+        'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
+        'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
+        'Ano ang kasinonimo ng alapaap?' => 'Lupa',
+        'Ano ang kasinonimo ng batid' => 'Di ko alam',
+        'Ano ang kasinonimo ng angal' => 'Gusto',
+        'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+    ];
+    private $IdnQuestions=[
+        'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
+        'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
+        'Ano ang kasinonimo ng alapaap?' => 'Lupa',
+        'Ano ang kasinonimo ng batid' => 'Di ko alam',
+        'Ano ang kasinonimo ng angal' => 'Gusto',
+        'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+    ];
+    
     public function logout(){
         Auth::logout();
         return redirect('/loginpage');
@@ -55,7 +81,16 @@ class BookController extends Controller
         }
         
     }
+    public function Home(){
+        $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);
+        $randttext = array_rand($questions); 
+        $randval = $questions[$randttext];
+        $text = $randttext;
+        $textval = $randval;
 
+        
+        return view('home', compact( 'text', 'textval'));
+    }
     public function Main()
     {
         $user = auth()->user();
@@ -137,42 +172,18 @@ class BookController extends Controller
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-        $SynQuestions=[
-            'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
-            'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
-            'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
-            'Ano ang kasingkahulugan ng batid' => 'Alam',
-            'Ano ang kasingkahulugan ng angal' => 'Reklamo',
-            'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
-        ];
-
-        $AntQuestions=[
-            'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
-            'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
-            'Ano ang kasinonimo ng alapaap?' => 'Lupa',
-            'Ano ang kasinonimo ng batid' => 'Di ko alam',
-            'Ano ang kasinonimo ng angal' => 'Gusto',
-            'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
-        ];
-        $IdnQuestions=[
-            'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
-            'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
-            'Ano ang kasinonimo ng alapaap?' => 'Lupa',
-            'Ano ang kasinonimo ng batid' => 'Di ko alam',
-            'Ano ang kasinonimo ng angal' => 'Gusto',
-            'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
-        ];
+        
         if($val['type'] == 'Synonyms'){
-            $questions= $SynQuestions;
+            $questions= $this->SynQuestions;
         }
         elseif($val['type'] == 'Antonyms'){
-            $questions= $AntQuestions;
+            $questions= $this->AntQuestions;
         }
         elseif($val['type'] == 'Identifications'){
-            $questions= $IdnQuestions;
+            $questions= $this->IdnQuestions;
         }
         else{
-            $questions = array_merge($SynQuestions, $AntQuestions, $IdnQuestions);  
+            $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);  
         }
         
 
@@ -202,7 +213,7 @@ class BookController extends Controller
 
         $seedData = [];
         foreach ($limitQuestions as $questionText => $correctAnswer) {
-            if( array_key_exists($questionText, $IdnQuestions)){
+            if( array_key_exists($questionText, $this->IdnQuestions)){
                 $seedData[] = [
                     'text' => $questionText,
                     'type' => 'Identifications',

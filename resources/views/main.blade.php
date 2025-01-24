@@ -118,6 +118,15 @@
                 <div class="back">
                     <div id="f4" class="back-cont">
                         <div class="content">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-cont">
+                        <div class="content">
                         <h1>KABANATA 2: Si Crisostomo Ibarra</h1>
                             <p id="ltr">Dumating si Kapitan Tiyago at si Ibarra na luksang-luksa ang kasuotan. Ang lahat ng panauhin ay binati ni Kapitan Tiyago. Nabigla ang mga pari sa paghalik nito sa kanilang mga kamay kaya nakalimutan nilang siya ay bendisyunan. Samantala, si Padre Damaso ay namutla nang makilala si Ibarra.
 
@@ -130,26 +139,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="p5" class="paper">
-                <div class="front">
-                    <div id="f5" class="front-cont">
-                        <div class="content">
-                            <p> Nagpapasalamat ang Tinyente sapagkat dumating ang binata ng walang anumang masamang nangyari. Basag ang tinig ng Tinyente nang sabihin niya sa binata na ang nasa nito’y higit na maging mapalad sa kaniyang ama. Ayon sa kaniya, ang ama ni Ibarra ay isang taong mabait. Ang ganitong papuri ay pumawi sa masamang hinala ni Ibarra tungkol sa kahabag-habag na sinapit ng kaniyang ama.
-
-                            Ang pasulyap ni Padre Damaso sa Tinyente ay sapat na upang layuan niya ang binata. Naiwang mag-isa si Ibarra sa bulwagan ng walang kakilala.
-
-                            Tulad ng kaugaliang Aleman na natutuhan ni Ibarra buhat sa kaniyang pag-aaral sa Europa, ipinakilala niya ang kaniyang sarili sa iba pang mga panauhin. Ang mga babae ay hindi umimik sa kaniya; ang mga lalaki lamang ang nagpakilala rin sa kaniya. Nakilala niya ang isang binatang tumigil din sa pagsusulat.
-
-                            Malapit ng tawagin ang mga panauhin upang makapaghapunan. Lumapit si Kapitan Tinong kay Ibarra upang kumbidahin sa isang pananghalian kinabukasan. Tumanggi sa anyaya ang binata sapagkat nakatakda siyang magtungo sa San Diego sa araw na naturan.
-                            </p>    
-                        </div>
-                    </div>
-                </div>
                 <div class="back">
                     <div id="f5" class="back-cont">
                         <div class="content">
+                        <p> Nagpapasalamat ang Tinyente sapagkat dumating ang binata ng walang anumang masamang nangyari. Basag ang tinig ng Tinyente nang sabihin niya sa binata na ang nasa nito’y higit na maging mapalad sa kaniyang ama. Ayon sa kaniya, ang ama ni Ibarra ay isang taong mabait. Ang ganitong papuri ay pumawi sa masamang hinala ni Ibarra tungkol sa kahabag-habag na sinapit ng kaniyang ama.
 
+                        Ang pasulyap ni Padre Damaso sa Tinyente ay sapat na upang layuan niya ang binata. Naiwang mag-isa si Ibarra sa bulwagan ng walang kakilala.
+
+                        Tulad ng kaugaliang Aleman na natutuhan ni Ibarra buhat sa kaniyang pag-aaral sa Europa, ipinakilala niya ang kaniyang sarili sa iba pang mga panauhin. Ang mga babae ay hindi umimik sa kaniya; ang mga lalaki lamang ang nagpakilala rin sa kaniya. Nakilala niya ang isang binatang tumigil din sa pagsusulat.
+
+                        Malapit ng tawagin ang mga panauhin upang makapaghapunan. Lumapit si Kapitan Tinong kay Ibarra upang kumbidahin sa isang pananghalian kinabukasan. Tumanggi sa anyaya ang binata sapagkat nakatakda siyang magtungo sa San Diego sa araw na naturan.
+                        </p>    
                         </div>
                     </div>
                 </div>

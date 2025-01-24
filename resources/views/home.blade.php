@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('Style/home.css')}}">
+    <script src="{{asset('js/home.js')}}" defer></script>
     <title>Aklatan</title>
 </head>
 <body>
@@ -25,6 +26,10 @@
         </nav>
     </header>
     <main>
+        <div class="title">
+        <h7><a href="#" class="ftext" data-answer="{{htmlspecialchars($text, ENT_QUOTES)}}">{{$textval}}</a></h7>
+            <h1 class="Text">Noli Me Tangere</h1>
+        </div>
     <section id="books">
         <a href="/nolimetangere"><h1>Pumunta sa aklat</h1></a>
     </section>
@@ -33,5 +38,6 @@
     </section>
     </main>
     <footer><h1>Ang Aming Grupo</h1></footer>
+    <div class="tfloat"><p></p></div>
 </body>
 </html>

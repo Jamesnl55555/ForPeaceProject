@@ -12,9 +12,7 @@ Route::post('/register', [BookController::class, 'register'])->name('register');
 
 
 Route::middleware('authentication')->group(function (){
-    Route::get('/', function () {
-        return view('home');
-    });
+    Route::get('/', [BookController::class, 'Home'])->name('Home');
 
 
     Route::get('/nolimetangere', [BookController::class, 'Main'])->name('Main');
