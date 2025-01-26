@@ -1848,8 +1848,7 @@ Natinag naman ang mga katiwala nang makitang may dalang mga baril ang mga gwardi
                         <h1> KABANATA 56: Ang mga Sabi at Kuro-kuro</h1>
                         Hanggang sa kinabukasan, sakmal pa rin ng takot ang buong bayan ng San Diego. Ni isa mang tao ay walang makitang naglalakad sa gitna ng daan. Tahimik na tahimik ang buong paligid. Pamaya-maya ay may isang batang naglakas ng loob na magbukas ng bintana at inilibot ang paningin. Dahil sa ginawa ng bata, nagsisunod ang iba at nagsibukasan ng mga bintana. Ang mga magkakapit-bahay ay nagbalitaan. Lubhang kalagim-lagim daw ang nagdaang gabi tulad noong mandambong si Balat. Sa kanilang pag-uusap, lumilitaw na si Kapitan Pablo raw ang sumalakay. Ipinapalagay naman ng iba na ang mga kuwadrilyero raw kaya dinakip si Ibarra. Ang mga lalaki ay nagpunta naman sa kuwartel at sa may tribunal. Lumitaw pa sa usapan ng mga tao na tinangka raw ni Ibarra na itanan ang kasintahang si Maria upang hindi matuloy ang pakikipag-isang dibdib niya kay Linaares. Kaya lang ay sinansala ni Kapitan Tiyago ang kanilang pagtatanan sa tulong ng mga sibil.
 
-Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa tribunal. Sinabi nitong nagtapat na si Bruno. Pinatunayan nito ang balita tungkol sa magkasintahang sina Ibarra at Maria. Sa ngitngit daw ni Ibarra, pati simbaha’y nais niyang paghigantihan. Mabuti na lamang at nasa bahay ni Kapitan Tiyago si Padre Salvi. Ang mga sibil daw ang sumunog sa bahay ng binata. May isang utusang babae naman ang nagpahayag na nakita niyang nakabitin sa ilalim ng puno ng santol si Lucas.
-
+Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa tribunal. Sinabi nitong nagtapat na si Bruno. Pinatunayan nito ang balita tungkol sa magkasintahang sina Ibarra at Maria. Sa ngitngit daw ni Ibarra, pati simbaha’y nais niyang paghigantihan. Mabuti na lamang at nasa bahay ni Kapitan Tiyago si Padre Salvi.
                         </div>
                     </div>
                 </div>
@@ -1858,12 +1857,20 @@ Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa trib
                 <div class="front">
                     <div id="f71" class="front-cont">
                         <div class="content">
+                        Ang mga sibil daw ang sumunog sa bahay ng binata. May isang utusang babae naman ang nagpahayag na nakita niyang nakabitin sa ilalim ng puno ng santol si Lucas.
+
                          </div>
                     </div>
                 </div>
                 <div class="back">
                     <div id="f71" class="back-cont">
                     <div class="content">
+                        <h1>KABANATA 57: Vae Victus! Sa Aba ng mga Manlulupig</h1>
+                        
+Balisa ang mga sibil na nasa kuwartel. Panay ang kanilang pagbabanta sa mga batang sumisilip sa puwang ng mga rehas upang tingnan ang mga nadakip. Naroroon ang alperes, direktorsilyo, Doña Consolacion, at ang kapitan na halatang malungkot. Bago mag-ika-siyam ay dumating ang kura at wala sa loob na naitanong niya sa alperes sina Ibarra at Don Filipo. Kasunod niya ang isang parang batang umiiyak at duguan ang salawal. Hinarap sa kura ang dalawang tanging buhay na nabihag ng mga sibil.
+
+Tarsilo Alasigan ang tunay na pangalan ni Tarsilo. Pilit siyang tinatanong kung kaalam si Ibarra sa nasabing paglusob. Ngunit iginigiit din niyang walang kamalay-malay si Ibarra sapagkat ang ginawa ay upang ipaghiganti ang kanilang amang pinatay sa palo ng mga sibil. Dahil dito, iniutos ng alperes na dalhin si Tarsilo sa limang bangkay, ito ay umiling. Nakita niya ang kaniyang kapatid na si Bruno na tadtad ng saksak, si Pedro na asawa ni Sisa, at si Lucas na may tali pang lubid sa leeg. Dahil sa patuloy itong walang imik sa sunod-sunod na pagtatanong sa kaniya ay nagpuyos sa galit ang alperes. Iniutos nito na paluin ng yantok si Tarsilo hanggang sa magdugo ang buong katawan nito.
+
                         </div>
                     </div>
                 </div>
@@ -1872,12 +1879,22 @@ Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa trib
                 <div class="front">
                     <div id="f72" class="front-cont">
                         <div class="content">
+                        Hindi makakanta si Tarsilo kaya ito ay ibinalik sa bulwagan. Nadatnan niya ang isang bilanggo ring nagpapalahaw sa iyak at tumatawag sa mga santo. Ipinasino kay Tarsilo ang dinatnan. Sinabi niyang ngayon niya lamang ito nakita. Dahil dito, muli siyang pinalo hanggang sa mabalot ng dugo ang buong katawan. Hindi nakayanan ng kura ang gayong tanawin kaya lumabas siya sa bulwagan na namumutla. Nakita ng kura ang isang dalagang parang nagbibilang ng mga naririnig sa loob ng tribunal, humahalinghing, at nananaghoy nang malakas. Ang babaeng ito ay ang kapatid na dalaga nina Bruno at Tarsilo. Samantala, nang hindi mapansin ni Tarsilo, lalong nagngitngit ang alperes. Binulungan pa siya ni Doña Consolacion na lalong pahirapan ang binata. Pero, hiningi na lamang ni Tarsilo na madaliin ang kaniyang kamatayan. Walang makuhang anumang impormasyon at hindi mapaamin si Tarsilo kaya ito ay itinumba sa isang balong nakakabaligtad ng sikmura ang tubig at amoy. Ilang beses ibinulusok ang katawan ni Tarsilo sa balon. Hindi niya natagalan ang pagpapahirap hanggang sa takasan siya ng hininga sa gayong uri ng kalupitan. Nang matiyak na patay na si Tarsilo, ang binalingan naman ay ang isa pang bilanggo.
+
+Ang pangalan diumano ng bilanggong ito ay Andong. Loko-loko ito at kaya napapunta sa patyo ay upang magbawas sapagkat pinapakain siya ng bulok ng biyenan niya. Inaantok ang alperes sa naging sagot ng bilanggo kaya iniutos nitong ipasok siyang muli sa karsel.
+
                          </div>
                     </div>
                 </div>
                 <div class="back">
                     <div id="f72" class="back-cont">
                     <div class="content">
+                        <h1>KABANATA 58: Ang Sinumpa</h1>
+                        
+Tuliro at balisa ang mga pamilya ng mga bilanggo. Sila ay pabalik-balik sa kumbento, kuwartel, at tribunal. Ngunit hindi sila makapagtamo ng lunas sa kanilang mga inilalakad. Palibhasa ay wala silang kilalang malakas at makakapitan na makakatulong upang palayain ang kanilang kamag-anak na bilanggo. May sakit ang kura at ayaw na lumabas ng kaniyang silid. Ayaw rin nitong makipag-usap sa kahit kanino. Ang alperes naman ay nagdagdag ng mga bantay upang kulahatin ang mga babaeng nagsusumamo sa kaniya. Ang kapitan naman ay lalong nawalan ng silbi.
+
+Nakakapaso ang sikat ng araw ngunit ang mga babae ay ayaw umalis. Palakad-lakad na umiiyak ang mag-ina ni Don Filipo. Inusal-usal naman ni Kapitana Tinay ang pangalan ng kaniyang anak na si Antonio. Si Kapitana Maria naman ay pasilip-silip sa rehas upang tingnan ang kambal niyang anak. Ang biyenan ni Andong ay nandoroon din at walang gatol na ipinagsasabing kaya raw hinuli si Andong ng mga sibil ay dahil sa bago nitong salawal. May isang babae naman ang halos mangiyak-ngiyak na nagsasabing si Ibarra ang may pakana at kasalanan ng lahat. Ang guro ng paaralan ay kasama-sama rin ng mga tao. Samantalang si Nor Juan ay nakaluksa na sapagkat ipinalagay niyang wala nang kaligtasan si Ibarra.
+
                         </div>
                     </div>
                 </div>
@@ -1886,12 +1903,20 @@ Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa trib
                 <div class="front">
                     <div id="f73" class="front-cont">
                         <div class="content">
+                        Mag-iikalawa na ng hapon nang dumating ang isang kariton na hila ng isang baka. Tinangka ng mga kaanak ng mga bilanggo na sirain at kalagan ang mga hayop na humihila sa kariton. Pero, pinagbawalan sila ni Kapitana Maria at sinabing kapag ginawa nila iyon, mahihirapan sa paglalakad ang kanilang kaanak na bilanggo.
+
+Pamaya-maya ay lumabas ang may dalawampung kawal at pinaligiran ang kariton. Ang sinunod na ilabas ay ang bilanggo sa pangunguna ni Don Filipo na nakuha pang batiin nang nakangiti ang kaniyang asawang si Doray at yayakapin niya na sana ang kaniyang asawa pero hinadlangan siya ng dalawang sibil. Nang makita naman si Antonio ng inang si Kapitana Tinay ay binirahan ito ng katakot-takot na hagulgol. Si Andong ay napaiyak din nang makita ang biyenan na may pasari ng kaniyang pagkakakulong. Katulad ng kambal na anak ni Kapitana Maria, ang seminaristang si Albano ay nakagapos na mabuti. Ang huling lumabas ay si Ibarra na walang gapos ngunit nasa pagitan ng dalawang kawal. Ang namumutlang si Ibarra ay pasuyod na tiningnan ang maraming tao at naghahanap ng isang mukhang kaibigan.
+
                          </div>
                     </div>
                 </div>
                 <div class="back">
                     <div id="f73" class="back-cont">
                     <div class="content">
+                    Pagkakita kay Ibarra ng mga tao, biglang umugong ang salitaan na kung sino pa ang may sala ay siya pa itong walang tali. Dahil dito, inuttusan ni Ibarra na gapusin siya ng mga kawal ng abot-siko. Kahit na walang utos ang kanilang mga pinuno, ang mga sibil ay sumunod din sa utos ng binata. Ang alperes ay lumabas na naka-kabayo at batbat ng sandata ang katawan. Kasunod niya ay may labinlimang kawal na umaalalay sa kaniya.
+
+Sa kalipunan ng mga bilanggo, tanging si Ibarra lamang ang walang tumatawag sa kaniyang pangalan at sa halip ay siya ang binubuntunan ng sisi at tinawag siyang duwag. Pati ang kaniyang mga nuno at magulang ay sinumpa ng mga tao hanggang siya ay tinawag na erehe na dapat mabitay. Kasunod nito ay pinagbabato na si Ibarra. Naalaala niya ang kuwento ni Elias tungkol sa babaeng nakakita ng ulong nasa bakol at nakabitin sa punongkahoy. Ang kasaysayan ng piloto ay parang biglang naglaro sa kaniyang pangitain.
+
                         </div>
                     </div>
                 </div>
@@ -1900,12 +1925,22 @@ Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa trib
                 <div class="front">
                     <div id="f74" class="front-cont">
                         <div class="content">
+                            <h1>KABANATA 59: Pag-ibig sa Bayan</h1>
+                            
+Ang ginawang paglusob ng mga naapi o sawimpalad ay nakarating at napalathala sa mga diyaryo sa Maynila. Iba rin ang balitang nagmula sa kumbento. Iba-iba ang estilo ng mga balitang lumaganap. At ang pang-unawa sa mga ito ay batay sa talas ng isip, kuro-kuro, damdamin at paniniwala. Ang mga tauhan ng kumbento ay higit na naliligalig. Ang mga probinsya ay palihim na nagdadalawang-isip at gumagawa ng mga pagpapanayam hinggil sa nangyari. Ang ilan naman ay nagpunta sa palasyo at naghandog ng tulong sa pamahalaang nasa panganib. Nabanggit pa nga na maging ang munting heneral o generalillo daw ay napagkuro ang kahalagahan ng korporasyon. Samantala, ipinagbubunyi naman si Padre Salvi at sinabing ito ay karapat-dapat na bigyan ng isang mitra.
+
+Sa ibang kumbento naman ay iba ang pinag-uusapan. Ang mga nag-aaral daw na mga heswita sa Ateneo ay lumalabas na nagiging pilibustero. Sa isang bahay naman sa Tondo, hindi mapakali si Kapitan Tinong dahil minsan ito ay nagpakita ng kagandahang-loob kay Ibarra, kaya panay ang sisi sa kanya ng asawang si Kapitana Tinchang. Ang kanilang dalawang anak na dalaga ay nasa isang tabi lamang at hindi umiimik.
                          </div>
                     </div>
                 </div>
                 <div class="back">
                     <div id="f574" class="back-cont">
                     <div class="content">
+                    Nasabi pa ni Tinchang na kung siya ay naging lalaki lamang, disin sana ay haharap siya sa Kapitan-Heneral at ihahandog nito ang kanyang paglilingkod laban sa mga manghihimagsik.
+                    Malapit nang mabanas nang husto si Tinong sa kakulitan ng asawa nang dumating ang kanilang pinsan na si Don Primitivo. Ito ay isang lalaking may edad at mahilig magsalita ng Latin. Siya ay ipinasundo ni Tinchang upang hingan ng payo sapagkat marunong itong mangatwiran. Kaagad na nag-umpisa ng pagsasalita si Tinchang pagkakita sa kaniyang pinsan. Ayon sa kanya, pinakain ni Tinong si Ibarra sa kanilang bahay at niyukuran pa niya ito nang makita sa may tulay ng Espanya sa gitna ng maraming tao at sinabing sila ay magkaibigan.
+
+Sinabi ni Don Primitivo na dapat nagpakilala si Tinong kay Ibarra sapagkat ang mga mabubuti raw ay napaparusahan dahil sa mga masasama. Kaya’t walang ibang nalalabing paraan kundi ang gumawa ng huling habilin si Tinong. Nawalan ng malay ng di oras si Tinong dahil sa payo. Nang bumalik ang kanyang ulirat, dalawang payo ang ibinigay ni Don Primitivo. Una ay magbigay sila ng regalo sa heneral ng kahit anong alahas at idahilan na ito ay pamasko, at pangalawa ay sunuging lahat ang mga kasulatan na maaaring makapagpahamak kay Tinong, na katulad ng ginawang pagsunog ni Ibarra sa kanyang mga kasulatan. Boto silang lahat sa payo.
+
                         </div>
                     </div>
                 </div>
@@ -1914,11 +1949,201 @@ Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa trib
                 <div class="front">
                     <div id="f75" class="front-cont">
                         <div class="content">
+                        Sa kabilang dako, sa isang pagtitipon sa Intramuros na dinaluhan ng mga dalaga, mga asawa at mga anak ng kawani, ang tema ng kanilang pag-uusap ay ang tungkol din sa naganap na pag-aalsa. Ayon sa isang lalaking komang ay galit na galit daw ang heneral kay Ibarra sapagkat naging napakabuti pa nito sa binata. Sinabi naman ng isang ginang na talagang walang utang na loob ang mga Indio kaya hindi dapat silang ituring na mga tunay na tao. Kahit na araw ang itatayong paaralan ay isang pakana lamang sapagkat ang tunay na layunin ni Ibarra ay gawin lamang itong kuta na gagamitin niya sa kanyang pansariling pangangailangan. Sumabad naman ang isa pang babae at ipinaliwanag na si Tinchang daw ay nagregalo ng isang singsing na puno ng brilyante sa Heneral. Napalingon ang lalaking komang at tiniyak kung totoo ang balita. Nagdahilan ang pingkok at nanaog na ng bahay.
+
+Ilang oras pa ang nakalipas, ang ilang mag-anak sa Tondo ay tumanggap ng mga paanyaya ng pamahalaan sa pamamagitan ng mga kawal. Ang imbitasyon ay tungkol sa pagtulog ng ilang mayayaman at tanyag na tao sa Fuerza de Santiago na may bantay pa. Si Kapitan Tinong ay kasama sa mga inimbita.
+
+
                          </div>
                     </div>
                 </div>
                 <div class="back">
                     <div id="f75" class="back-cont">
+                    <div class="content">
+                        <h4>KABANATA 60: Ikakasal na si Maria Clara</h4>
+                        Tuwang-tuwa si Kapitan Tiyago sapagkat hindi siya nahuli o natanong man lamang. Hindi rin siya nakuryente o nabilanggo sa ilalim ng lupa. Dahil dito, siya ay nagpamisa sa Mahal na Birhen sa Antipolo, Birhen del Rosario, at sa Birhen del Carmen. Kung hindi naimbita si Kapitan Tiyago ng pamahalaan, masamang kapalaran naman ang dumapo kay Kapitan Tinong. Tulad ng karamihan siya ay inimbitahan ng pamahalaan. Di nakabuti sa kanya ang paglalakbay sa ibat-ibang tanggapan nito sapagkat siya ay may sakit, putlain, namamanas, at hindi palaimik. Hindi na rin siya bumaba ng bahay, dahil nangangamba itong baka batiin siya na isang pilibustero. Alam ni Kapitan Tiyago ang ganitong sinapit ni Tinong.
+
+Dumating sa bahay ni Tiyago si Linares at ang mag-asawang de Espadaña na kapwa itinuring na pangkat ng maka-pamahalaan. Sinarili ni Doña Victorina ang usapan. Sinabi na kung babarilin si Ibarra, iyon ang nararapat sapagkat siya ay isang pilibustero. Bagama’t namumutla at mahina si Maria, kanyang hinarap ang mga bisita. Humantong ang usapan tungkol sa pagpapakasal nina Maria at Linares. Nagkayarian din na magpapapista si Tiyago. Sinabihan niya si Tiya Isabel na alamin kung ano ang nasa loob ni Maria tungkol sa napipinto nitong pakikipag-isang dibdib.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p76" class="paper">
+                <div class="front">
+                    <div id="f76" class="front-cont">
+                        <div class="content">
+                        Sa wari, desidido na si Kapitan Tiyago na ipakasal si Maria sapagkat nakini-kinita niyang siya’y maglalabas-masok sa palasyo sa sandaling maging manugang niya si Linares. Si Linares ang tagapayo ng Kapitan Heneral, kaya’t inaakala ni Kapitan Tiyago na siya ay kaiinggitan ng mga tao.
+                        Kinabukasan, ang bulwagan ni Tiyago ay puno ng mga bisitang Kastila at Intsik. Nangunguna sa mga ito si Padre Salvi, Padre Sibyla, ilang Pransiskano at Dominikano, ang alperes na ngayon ay tinyente na at may grado ng komandante, ang mag-asawang de Espadaña, si Linares na nagpatihuli ng dating, at si Tinyente Guevarra ng mga sibil.
+
+Ang paksa ng mga babae ay si Maria na kahit malungkot siya ay magalang na tinanggap ang mga bisita. Sinabi ng isang babae na maganda nga raw si Maria, pero ito raw ay tanga naman. Kayamanan lang daw habol ni Linares sa kaniya. Sinabi rin na marunong daw siya sa buhay sapagkat kaya siya ikakasal dahil bibitayin ang unang katipan ni Ibarra. Sa narinig ni Maria ay lalo siyang nasaktan at naghirap ang kalooban. Iniwan niya ang mga babaeng nag-uusap.
+
+Sa pulutong ng mga lalaking nag-uusap naman, lumitaw na ang kura ay lilipat na sa Maynila samantalang hindi tiyak ng alperes kung saan ito madedestino. Ipinaliwanag ni Guevarra na hindi mabibitay si Ibarra na katulad ng mga nangyari kina Gomez, Burgos, at Zamora, at sa halip ito ay ipatatapon lamang. Binanggit din niya ang tungkol sa kaso ng binata at pagkaraan ay binati niya si Maria. 
+                    </div>
+                </div>
+                </div>
+                <div class="back">
+                    <div id="f76" class="back-cont">
+                    <div class="content">
+                    Ito raw ay nakakatiyak ng magandang kinabukasan. Nagpaalam na ang tinyente.
+                    Nagtungo sa asotea si Maria. Nakita niya ang bangkang pumasadsad sa may sadsaran ng bahay ni Kapitan Tiyago. Puno ng damo ang ibabaw ng bangka at may lulan itong dalawang lalaki. Bumaba ang isa sa lulan ng bangka at pinanhik si Maria; ito ay si Ibarra. Nakatakas siya sa tulong ni Elias. Dumaan lamang ang binata upang ipaalam ang damdamin nito at tuluyang bibigyan ng laya ang kasintahan tungkol sa kanilang kasunduan. Inilahad ni Maria ang tunay na kasaysayan at pagkatao nito. Napilitan umano itong talikuran ang kanilang pag-iibigan alang-alang sa kanyang inang namayapa at sa dalawang amang nabubuhay pa. Pero wala siyang tanging iniibig kundi si Ibarra lamang. Mahigpit na niyapos at pinupog ng halik ni Ibarra si Maria.  Pagkaraan ay lumundag muli ito sa pader at sumakay sa bangka. Nag-alis ng sumbrero si Elias at yumukod kay Maria. Sumagwang papalayo ang dalawa sa lumuluhang si Maria.
+                     </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="p77" class="paper">
+                <div class="front">
+                    <div id="f77" class="front-cont">
+                        <div class="content">
+                            <h5>KABANATA 61: Ang Barilan sa Lawa</h5>
+                            Habang mabilis na sumasagwan si Elias, sinabi niya kay Ibarra na itatago niya siya sa bahay ng isang kaibigan sa Mandaluyong. Ang salapi ni Ibarra na itinago niya sa may puno ng baliti sa libingan ng ninuno nito ay kanyang ibabalik upang may magamit si Ibarra sa pagpunta nito sa ibang bansa. Nasa ibang lupain daw ang katiwasayan ni Ibarra at hindi nababagay na manirahan sa Pilipinas, dahil ang buhay niya ay hindi inilaan sa kahirapan. Inalok ni Ibarra na magsama na lang sila ni Elias, tutal pareho na sila ng kapalaran at magturingan na parang magkapatid. Pero, tumanggi si Elias.
+
+Nang mapadaan sila sa tapat ng palasyo, napansin nilang nagkakagulo ang mga bantay. Pinadapang mabuti ni Elias si Ibarra at tinakpan ng maraming damo. Nang mapadaan sila sa tapat ng isang polvorista, sila’y pinatigil at tinanong ng bantay si Elias kung saan ito nanggaling. Ipinaliwanag ni Elias na siya’y galing ng Maynila at rarasyunan niya ng damo ang hukom at ang kura. Nakumbinsi naman ang bantay sa paliwanag ni Elias kaya ipinatuloy niya ito sa pagsasagwan at pinagbilinan na huwag magpapasakay sa bangka sapagkat katatakas pa lamang ng isang bilanggo. Kung mahuhuli raw ito ni Elias, siya ay bibigyan ng gantimpala. Inilarawan ng bantay na ang bilanggong tinutukoy ay nakalebita at mahusay magsalita ng Kastila. Nagpatuloy sa pagsasagwan si Elias at lumihis sila ng landas. Pumasok sila sa may ilog Beatang na inawit ni Balagtas upang akalaing siya ay taga-Peñafrancia.
+
+                         </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="f77" class="back-cont">
+                    <div class="content">
+                    Itinapon ni Elias ang mga damo sa pampang, kinuha ang isang mahabang kawayan at ilang bayong, at sumige sa pagsagwan. Nagkuwentuhan muli sina Elias at Ibarra. Nakalabas na sila sa ilog Pasig.
+
+Nakarating sila sa may Sta. Ana. Napadaan sila sa tapat ng bahay-bakasyunan ng mga heswitas kaya hindi maiwasang manariwa sa isip ni Elias ang masasayang araw na tinamasa niya; may magulang, kapatid, magandang kinabukasan, at mamuhay nang masagana at mapayapa. Sumapit sila sa malapad na bato at nang makitang inaantok ang bantay at wala siyang kasama, pinaraan niya si Elias.
+
+Umaga na nang sapitin nila ang lawa. Pero sa hindi kalayuan ay nabanaagan nila ang isang palwa ng mga sibil na papalapit sa kanila. Pinahiga ni Elias si Ibarra at tinakpan niya ito ng bayong. Nahalata ni Elias na hinahadlangan sila sa baybayin. Kaya sumagwan itong patungo sa may Binangonan, ngunit nagbago rin ng direksyon ang palwa at tinawag sila. Inisip ni Elias na magbalik sa bunganga ng ilog Pasig. Nakuro ni Elias na napagtatalikupan sila at wala silang kalaban-laban. Isa pa ay wala silang dala ni isa mang sandata. Mabilis na naghubad ng damit si Elias. Sinabi niya kay Ibarra na magkita na lamang sila sa noche buena sa libingan ng nuno ni Ibarra. Tumayo si Elias at tumalon sabay sikad sa bangka.
+
+Ang atensyon ng mga sibil sa palwa at nakasakay sa bangka ay natuon kay Elias. Pinaulanan nila ng punglo ang lugar na pinagtalunan nito. 
+                   </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p78" class="paper">
+                <div class="front">
+                    <div id="f78" class="front-cont">
+                        <div class="content">
+                        Kapag lumilitaw si Elias pinapuputukan ito. Nang may limangpung dipa na lamang ang layo ni Elias sa may pampang, nahapo na ang humahabol sa kanya sa kasasagwan. Makalipas ang tatlong oras ay umalis na ang mga sibil sapagkat napansin nilang may bahid ng dugo sa tubig ng baybayin ng pampang.
+
+                         </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="f78" class="back-cont">
+                    <div class="content">
+                        <h5>KABANATA 61: Ang Habulan sa Lawa</h5>
+                        Plano ni Elias na itago si Ibarra sa bahay ng kaibigan niya sa Mandaluyong.
+Huhukayin niya ang mga salapi at alahas na itinago niya sa puno ng balite na nasa libingan ng mga nito upang may magamit papunta sa ibang bansa. Doon ay mamumuhay siya ng tahimik.
+
+
+Nang mapadaan sa ilalim ng tulay ay may narinig silang mga tunog ng takbo ng kabayo. Umiikot na ang mga gwardiya sibil upang hanapin si Ibarra.
+
+
+Inalok ni Ibarra na sumama si Elias dahil pareho naman silang ng kinahantungan. Ngunit hindi naman pumayag si Elias. Malapit na sila sa palasyo ng Kapitan Heneral at kitang nagkakagulo na ang mga gwardiya sibil.
+
+
+Paikot-ikot ang mga gwardiya sa paligid dahil tiyak na alam na ng mga ito ang gagawing pagtakas ni Ibarra. Tinakpan ni Elias si Ibarra ng mga damo upang hindi ito makita. Tinanong si Elias ng isang bantay kung saan ito nanggaling.
+
+
+Galing siya sa Maynila at magrarasyon siya ng damo para sa alagang kabayo ng konsehal at kura ang tugon niya. Naniwala naman ang bantay kaya pinalagpas nito si Elias. Ibinilin ng bantay na huwag magpapasakay kung mayroon mang humingi ng tulong dahil may isang bilanggo ang nakatakas.
+
+
+Muling lumabas si Ibarra ng makalayo na sa paningin ng bantay. Patungo sila sa Ilog Beata. Doon ay ibinaba ni Elias ang mga sakay na damo at nagputol naman ng mga kawayan. Sinakay rin nila sa bangka ang mga bayong na nagkalat.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p79" class="paper">
+                <div class="front">
+                    <div id="f79" class="front-cont">
+                        <div class="content">
+                        Nang dumaan sa Malapad na Bato ay sinipat-sipat sila ng gwardiya. Sinabi niya na ibebenta niya sa mga Intsik ang mga kawayan at bayong na nasa bangka. Agad namang naniwala ang bantay at pinalagpas ulit si Elias.
+Nakahinga nang maluwag ang dalawa dahil malayo na sila sa gwardiya ngunit meron silang napansin na lantsang paparating na parang sumusunod sa kanila. Iyon ang mga konstabularyo na mukhang ikinakasa ang kanilang mga riple at nakaasinta sa kanila.
+
+
+Naghubad ng damit si Elias at biglang talon sa tubig. Balak niyang iligaw ang mga sumusunod sa kanila. Sa tuwing inilalabas ni Elias ang ulo ay nakakarinig si Ibarra ng mga putok ng baril. Habang nililito ni Elias ang mga gwardiya payapa namang inaanod ang bangkang hinihigaan ni Ibarra.
+
+
+Nagpatuloy sa pagsisid at paglangoy si Elias. Makikita na ang pagod sa mukha nito. Malapit nang makarating si Elias sa pampang nang inasinta siya ng sarhento ng konstabularyo.
+
+
+Maya-maya pa’y may nakitang dugo ang gwardiya ngunit wala namang nakitang bangkay.
+
+                         </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="f79" class="back-cont">
+                    <div class="content">
+                        <h5>KABANATA 61: Ang Pagtatapat ni Padre Damaso</h5>
+                        Umaga na. Hindi pansin ni Maria ang maraming regalo na nakabunton sa itaas ng hapag. Ang mga mata niya ay nakapako lamang sa diyaryong nagbabalita tungkol sa pagkamatay o pagkalunod ni Ibarra. Pero, hindi naman binasa ni Maria ang diyaryo. Pamaya-maya ay dumating si Padre Damaso at humiling kaagad kay Maria na sirain ang kasunduan ng kanyang kasal kay Linares at pangalagaan ang kapakanan ng ama. Sinabi ni Maria na ngayong patay na si Ibarra ay walang sinumang lalaking kaniyang pakakasalan. Dalawang bagay na lamang ang mahalaga sa kanya, ang kamatayan o ang kumbento.
+
+Napagmuni ni Padre Damaso na pinaninindigan ni Maria ang kanyang sinabi, kaya humingi ito ng tawad sa kaniya. Napahagulgol pa ito nang malakas habang binibigyan diin niya ang walang kapantay na pagtingin kay Maria. Wala siyang nagawa kundi pahintulutan na pumasok sa kumbento si Maria kaysa piliin nito ang kamatayan. Umalis si Padre Damaso na sakbibi ng lumbay. Tumingala ito sa langit at pabulong na sinabing totoo ngang may Diyos na nagpaparusa. Hiniling niya sa Diyos na siya ang parusahan at huwag ang walang malay niyang anak na nangangailangan ng kanyang pagkalinga. Ramdam na ramdam ng pari ang kasiphayuang dinaranas ni Maria.
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p80" class="paper">
+                <div class="front">
+                    <div id="f79" class="front-cont">
+                        <div class="content">
+                        <h5>KABANATA 63: Ang Noche Buena</h5>
+                        May isang kubo na yari sa balu-baluktot na sanga ng kahoy ang nakatayo sa libis ng isang bundok. Sa dampa ay mayroong nakatirang mag-anak na Tagalog na nabubuhay dahil sa pangangaso at pangangahoy. Sa lilim ng isang puno ay mayroong isang matanda na gumagawa ng walis. Sa isang tabi naman ay mayroong isang dalaga na naglalagay ng mga itlog ng manok, gulay at dayap sa isang bilao. Sa hindi kalayuan, may isang batang lalaki at batang babae na naglalaro sa tabi ng isang payat at putlain. Ang batang nakaupo sa nakabuwal na kahoy ay si Basilio, at may sugat ito sa paa. Inaaliw siya ng dalawang batang naglalaro. Nang utusan ng matanda ang apong dalaga na ipagbili ang mga nagawang walis, sinabi niya kay Basilio na may dalawang buwan na ang nakakaraan nang ito ay kanilang matagpuang sugatan at kalingain pagkatapos. Isinalaysay naman niya ang tungkol sa buhay nilang mag-anak. Kaya, nang ito ay magpaalam na uuwi na sa kanila, siya ay pinayagan ng matanda at ipinagbaon pa niya ng pindang na usa para sa kanyang inang si Sisa.
+
+Samantala, noche buena na, ngunit ang mga taga-San Diego ay nangangatog sa ginaw bunga ng hanging amihan na nagmumula sa hilaga. Kung ikukumpara sa mga nagdaang handaan, hindi na masayang-masaya ang mga tao.  Sa halip ay lungkot na lungkot ang buong bayan. 
+                         </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="f80" class="back-cont">
+                    <div class="content">
+                    Wala man lamang nakasabit na mga parol sa bintana ng bahay, at kahit na sa tahanan ni Kapitan Basilio ay wala ring kasigla-sigla. Kausap ng kapitan si Don Filipo na napawalang sala sa mga bintang laban dito nang mamataan nila si Sisa na isa nang palaboy. Pero, hindi naman siya nananakit ng kapwa.
+                    Ang pinsan nitong si Victoria ay si Iday. Si Sinang ay tumanggap ng liham buhat kay Maria subalit hindi niya ito binubuksan sa takot na malaman ang nilalaman.
+                    Habag na habag ang magkakaibigan sa magkasintahang Maria at Ibarra. May kumalat namang balita na ang pagkakaligtas ni Kapitan Tiyago mula sa bibitayin ay utang niya kay Linares.
+
+Nakarating na si Basilio sa kanilang tahanan. Pero, wala ang kanyang ina. Paika-ika niyang tinalunton ang landas patungo sa tapat ng bahay ng alperes. Nandoon ang ina, umaawit ng walang katuturan.
+Inutusan ng babaeng nasa durungawan ang sibil na papanhikin si Sisa. Subalit nang makita ni Sisa ang tanod, kumaripas ito ng takbo at natakot.    Hinabol ni Basilio ang ina, pero binato siya ng alilang babaeng nasa daan. Nasapol sa ulo si Basilio pero hindi ito tumigil sa pagsunod sa inang tumatakbo. Nakarating sila sa may gubat.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="p81" class="paper">
+                <div class="front">
+                    <div id="f81" class="front-cont">
+                        <div class="content">
+                          Pumasok sa pinto ng libingan ng matandang Kastila si Sisa, kung saan ito ay nasa tabi ng punong baliti. Pilit na binubuksan ito ni Basilio. Nakita niya ang isang sanga ng baliting nakakapit sa kinaroroonan ng ina. Kaagad niya itong niyakap at pinaghahagkan hanggang sa mawalan ng ulirat.
+
+                          Nang makita naman ni Sisa ang duguang ulo si Basilio, unti-unting nagbalik ang katinuan ng kanyang isip. Nakilala rin niya ang anak. Napatili ito nang malakas at biglang napahandusay sa ibabaw ng anak. Nawalan naman ito ng malay. Nang bumalik ang ulirat ni Basilio at makita ang ina, kumuha ito ng tubig at winisikan ito sa mukha. Dinaiti niya ang kanyang tainga sa dibdib ni Sisa. Sinakmal ng matinding pagkasindak si Basilio. Patay na ang kanyang ina. Buong higpit na niyakap niya ang malamig na bangkay ng ina at napahagulgol nang malakas at sumubsob sa ina. Nang mag-angat siya ng ulo, nakita niya ang isang taong nagmamasid sa kaniya. Tumango si Basilio nang tanungin siya ng tao kung anak siya ng namatay.
+
+                         </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="f81" class="back-cont">
+                    <div class="content">
+                        <h1>KABANATA 64: Katapusan</h1>
+                        Magmula ng pumasok sa kumbento si Maria, nanirahan na si Padre Damaso sa Maynila. Hindi nagtagal ay inilipat ang padre probinsyal sa isang malayong probinsiya. Kinabukasan, siya ay nakitang bangkay sa kanyang higaan. Sa pagsusuri ng doktor, sama ng loob o bangungot ang sanhi ng kanyang ikinamatay.
+
+Sa kabilang dako, habang hinihintay niya ang pagiging obispo, si Padre Salvi ay nanungkulan pansamantala sa kumbento ng Sta. Clara na pinasukan ni Maria Clara. Kasunod nito ay umalis na rin siya sa San Diego at nanirahan na sa Maynila.
+
+Ilang linggo naman bago naging ganap na mongha si Maria. Si Kapitan Tiyago ay dumanas ng sapin-saping paghihirap ng damdamin, nangayayat nang husto, naging mapag-isip, at nawalan ng tiwala sa mga kainuman. Pagkagaling niya sa kumbento, sinabihan niya si Tiya Isabel na umuwi na ito sa Malabon o sa San Diego sapagkat gusto na lamang niyang mabuhay mag-isa. Ang lahat ng mga santo at santang kanyang pinipintakasi ay nalimot na niya. Ang kanyang inaatupag ngayon ay ang paglalaro ng liyempo, sabong at paghithit ng marijuana. Madalas, tuwing takip-silim ay makikita siya sa tindahan ng Intsik sa Sto. Cristo. Hindi nagtagal, napabayaan niya ang kanyang katawan at kabuhayan. Ang kanyang dating marangyang tahanan ay mayroong nakasulat sa pintuan na: Fumadero Publico de Anfion.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="p82" class="paper">
+                <div class="front">
+                    <div id="f82" class="front-cont">
+                        <div class="content">
+                        Ganap na siyang nalimot ng mga tao. Wala ni isa mang nakakaalala sa kanya; siya na isang tanyag at dating iginagalang.
+
+Nagdagdag ng mga kulot sa ulo si Doña Victorina upang mapagbuti ang pagbabalat-kayo niyang siya’y taga-Andalucia. Siya ngayon ang nangungutsero. Si Don Tiburcio ay hindi na niya pinakikilos. Nagsasalamin na ito. Hindi na rin siya natatawag bilang doktor para maggamot. Wala na rin siyang ngipin.
+                        
+                         </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="f82" class="back-cont">
                     <div class="content">
                         </div>
                     </div>
@@ -1928,10 +2153,7 @@ Samantala, nakausap ni Hermana Pute ang isang lalaking kagagaling lamang sa trib
         <button id="next-btn">
             <h1>></h1>
         </button>
-        
     </div>
-
-    
     <div class="sidenotes" id="sidenotes"> 
         <p></p> 
     </div>
