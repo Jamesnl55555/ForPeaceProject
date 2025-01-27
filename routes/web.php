@@ -14,7 +14,7 @@ Route::post('/register', [BookController::class, 'register'])->name('register');
 Route::middleware('authentication')->group(function (){
     Route::get('/', [BookController::class, 'Home'])->name('Home');
 
-
+    Route::get('/viewtest/{id}', [BookController::class, 'viewtest'])->name('viewtest');
     Route::get('/nolimetangere', [BookController::class, 'Main'])->name('Main');
     Route::get('/syn/{testId}', [BookController::class, 'Synonym'])->name('Synonym');
     Route::get('/halo/{testId}', [BookController::class, 'Halo'])->name('Halo');

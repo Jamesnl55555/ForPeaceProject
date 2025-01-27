@@ -150,3 +150,7 @@ footer a {
 footer a:hover {
     color: #d59f69;
 }
+
+.link{
+    text-decoration: none;
+}

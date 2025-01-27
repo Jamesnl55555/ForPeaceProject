@@ -110,6 +110,12 @@ class BookController extends Controller
         
         return view('home', compact( 'text', 'textval'));
     }
+    public function viewtest($id){
+       
+        $test = Test::with('questions.options')->findOrFail($id);
+        
+        return view('viewtest', compact('test'));
+    }
     public function Main()
     {
         $user = auth()->user();
@@ -283,6 +289,7 @@ class BookController extends Controller
                     'text' => $questionText,
                     'type' => $val['type'],
                     'options' => $formattedOptions,
+                    'correct_answer' => $correctAnswer
                 ];
 
         
@@ -303,6 +310,7 @@ class BookController extends Controller
                 'text' => $questionText,
                 'type' => $val['type'],
                 'options' => $formattedOptions,
+                'correct_answer' => $correctAnswer
             ];
 
         }

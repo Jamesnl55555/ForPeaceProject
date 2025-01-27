@@ -1,0 +1,119 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ea;
+    color: #4b2e1d;
+    margin: 0;
+    padding: 0;
+    cursor: url('/image/cursor.png') 16 16, pointer;
+}
+
+header {
+    background-color: #6b4c35;
+    color: #f4f1ea;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #4a3c31;
+}
+
+header a.reset {
+    color: #f4f1ea;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border: 2px solid #f4f1ea;
+    border-radius: 8px;
+}
+
+header a.reset:hover {
+    background-color: #4a3c31;
+    border-color: #4a3c31;
+    color: #f4f1ea;
+}
+
+form {
+    padding: 20px;
+}
+
+.fullback {
+    background-color: #e5d3bb;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.questions {
+    border-bottom: 2px solid #d7c2a7;
+    padding: 20px 0;
+}
+
+.questions h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #4b2e1d;
+}
+
+.questions input[type="text"] {
+    font-size: 1rem;
+    padding: 10px;
+    border: 2px solid #4b2e1d;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.questions button {
+    background-color: #8b5e3c;
+    color: #f4f1ea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.questions button:hover {
+    background-color: #6b4c35;
+}
+a.success{
+    background-color: #18db0e;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5px 0;
+}
+a.wrong {
+    background-color: #8b5e3c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+a.success:hover, a.wrong:hover {
+    opacity: 0.8;
+}
+
+button.Hidden {
+    background-color: #8b5e3c;
+    color: #f4f1ea;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+}
+
+button.Hidden:hover {
+    background-color: #6b4c35;
+}

@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const questionContainer = document.getElementById(`container-${questionId}`);
         const answer = document.getElementById(`Answer-${questionId}`).value;
         if(answer.toLowerCase() === correctAns.toLowerCase()){
-            alert("Correct");
+            // alert("Correct");
             score++;
             input.value = score;     
             questionContainer.style.display = "none";
             checkAllHidden();
         }
         else {
-            alert("Incorrect! The correct answer is: " + correctAns);
+            // alert("Incorrect! The correct answer is: " + correctAns);
             questionContainer.style.display = "none";
             checkAllHidden();
         }
@@ -53,10 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (allHidden) {
             alert('You scored: ' + score);
-            button.style.display ="block"
+            button.style.display ="block";
+            resetButton.style.display = "none";
         }
         else{
-            button.style.display ="none"
+            button.style.display ="none";
         }
     }
 

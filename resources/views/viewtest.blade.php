@@ -5,31 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('Style/test.css')}}">
-    <script src="{{asset('js/test.js')}}" defer></script>
+    <link rel="stylesheet" href="{{asset('Style/viewtest.css')}}">
+    
     <title>Synonyms</title>
 </head>
 <body>
     <header>
-    <a class="reset" href="#">Reset</a>
+    <h1>{{$test->name}}</h1>
 
     </header>
-    <form action="{{route('Add', $test->id)}}" method="POST">
-    
-        @csrf
-        <input type="hidden" name="test_id" value="{{$test->id}}">
-        <input type="hidden" id="int" name="score" value="0"> 
-        <input type="hidden" id="type" name="type" value="{{$test->type}}"> 
     <div class="fullback">
         @foreach ($test->questions as $question)
             <div class="questions" id="container-{{$question->id}}">
                 <div>
                     <h1>{{ $question->text }}</h1>
                     @if ($question->type == 'Identifications')
-                    <!-- <h1>{{ $question->correct_answer }}</h1> -->
+                    
                     <h1>Answer: </h1>
-                        <input type="text" id="Answer-{{$question->id}}" class="identif" name="Answer-{{$question->id}}" required>
-                        <button type="button" onclick="check({{$question->id}}, '{{$question->correct_answer}}')">Next</button>
+                        <input type="text" id="Answer-{{$question->id}}" class="identif" name="Answer-{{$question->id}}" placeholder="Correct Answer:{{ $question->correct_answer }}">
+                        
                     @endif
                 </div>
                 <br>
@@ -52,10 +46,10 @@
                 @endif
             </div>
         @endforeach
-        
+        <form action="/showtest" method="GET">
+        @csrf
+        <button id="submitbtn" class="Hidden" >Done</button>
+        <form>
         <br>
-        <button type="submit" class="Hidden" id="submitbtn">Done</button>
-        </div>
-    </form>
 </body>
 </html>
