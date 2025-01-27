@@ -19,16 +19,18 @@ class BookController extends Controller
         'Siya ay isang matandang pari at mataas na opisyal ng simbahan sa bayan ng San Diego' => 'Padre Damaso',
         'Siya ay isang pari at tagapayo sa mga opisyal ng simbahan sa Noli Me Tangere.' => 'Padre Salvi',
         'Siya ay ang matalik at misteryosong kaibigan ng pangunahing tauhan ng Noli Me Tagere' => 'Elias',
-        'Siya ang ina nina Bsilio at Crispin' => 'Sisa',
+        'Siya ang ina nina Bsilio' => 'Sisa',
     ];
     private $MCNQuestions=[
         'Siya ang minamahal ng pangunahing tauhan ng Noli Mi Tangere na nagbalik mula sa Europa.' => 'Maria Clara',
-        'Siya ang ama ng dalagang minamahal ng pangunahing tauhan ng Noli Mi Tangere at isang mayamang negosyante.' => 'Kapitan Tiago',
+        'Siya ang ama ng dalagang minamahal ng pangunahing tauhan ng Noli Me Tangere at isang mayamang negosyante.' => 'Kapitan Tiago',
         'Siya ang pangunahing tauhan sa Noli Me tangere' => ' Crisostomo Ibarra',
         'Siya ay isang matandang pari at mataas na opisyal ng simbahan sa bayan ng San Diego' => 'Padre Damaso',
         'Siya ay isang pari at tagapayo sa mga opisyal ng simbahan sa Noli Me Tangere.' => 'Padre Salvi',
         'Siya ay ang matalik at misteryosong kaibigan ng pangunahing tauhan ng Noli Me Tagere' => 'Elias',
-        'Siya ang ina nina Bsilio at Crispin' => 'Sisa',
+        'Siya ang ina ni Basilio' => 'Sisa',
+        'Siya ang kapatid ni Basilio' => 'Crispin',
+        'Siya ang itinakdang ipakasal sa minamahal ng pangunahing tauhan ng Noli Me Tangere'
     ];
     private $SynQuestions=[
         'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
@@ -45,16 +47,17 @@ class BookController extends Controller
         'Ano ang kasinonimo ng alapaap?' => 'Lupa',
         'Ano ang kasinonimo ng batid' => 'Di ko alam',
         'Ano ang kasinonimo ng angal' => 'Gusto',
-        'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+        'Ano ang kasinonimo ng leksyon' => 'Wag Aralin',
+
     ];
     private $IdnQuestions=[
         'Kabuuang pangalan ng nagsulat ng Noli Me Tangere' => 'Jose Protasio Rizal Mercado y Alonso Realonda',
-        'Ano?' => 'Good',
-        'And your mad?' => 'Bad',
-        'hi?' => 'Lonely',
-        'hello' => 'Happy',
-        'Ano ang expresyon mo' => 'Mad',
-        'Ano ka' => 'Calm'
+        'Siya ang guro ni Crispin at kilala sa tawag na..' => 'Pilosopo Tasyo',
+        'Ito ang bayan kung saan naganap ang karamihan sa kwento' => 'San Diego',
+        'Ito ay simbolo ng pananampalatayang kristiyano ng Noli Me Tangere' => 'Krus',
+        'Ito ang simbolo ng kaliwanagan at edukasyon' => 'Sulo',
+        
+
     ];
     
     public function logout(){

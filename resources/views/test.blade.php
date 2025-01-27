@@ -40,7 +40,6 @@
                 @foreach($test as $tests)
                 <a class="link" href="/viewtest/{{$tests->id}}">
                     <div class="test-card">
-                    {{$tests->id}}
                         <h4>{{$tests->name}}</h4>
                         <p><strong>Type:</strong> {{$tests->type}}</p>
                         <p><strong>Score:</strong> {{$tests->score}} / {{$tests->question_quantity}}</p>
