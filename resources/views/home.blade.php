@@ -33,6 +33,9 @@
         <section id="test">
             <a href="showtest"><h1>Mga hamon</h1></a>
         </section>
+        <section id="Leaderboards">
+            <a href="leaderboards"><h1>Mga nangunguna</h1></a>
+        </section>
     </main>
     <footer><h1>Ang Aming Grupo</h1></footer>
     <div class="tfloat"><p></p></div>
