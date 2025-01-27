@@ -12,6 +12,24 @@ use Illuminate\Support\Facades\DB;
 
 class BookController extends Controller
 {
+    private $NameQuestions=[
+        'Siya ang minamahal ng pangunahing tauhan ng Noli Mi Tangere na nagbalik mula sa Europa.' => 'Maria Clara',
+        'Siya ang ama ng dalagang minamahal ng pangunahing tauhan ng Noli Mi Tangere at isang mayamang negosyante.' => 'Kapitan Tiago',
+        'Siya ang pangunahing tauhan sa Noli Me tangere' => ' Crisostomo Ibarra',
+        'Siya ay isang matandang pari at mataas na opisyal ng simbahan sa bayan ng San Diego' => 'Padre Damaso',
+        'Siya ay isang pari at tagapayo sa mga opisyal ng simbahan sa Noli Me Tangere.' => 'Padre Salvi',
+        'Siya ay ang matalik at misteryosong kaibigan ng pangunahing tauhan ng Noli Me Tagere' => 'Elias',
+        'Siya ang ina nina Bsilio at Crispin' => 'Sisa',
+    ];
+    private $MCNQuestions=[
+        'Siya ang minamahal ng pangunahing tauhan ng Noli Mi Tangere na nagbalik mula sa Europa.' => 'Maria Clara',
+        'Siya ang ama ng dalagang minamahal ng pangunahing tauhan ng Noli Mi Tangere at isang mayamang negosyante.' => 'Kapitan Tiago',
+        'Siya ang pangunahing tauhan sa Noli Me tangere' => ' Crisostomo Ibarra',
+        'Siya ay isang matandang pari at mataas na opisyal ng simbahan sa bayan ng San Diego' => 'Padre Damaso',
+        'Siya ay isang pari at tagapayo sa mga opisyal ng simbahan sa Noli Me Tangere.' => 'Padre Salvi',
+        'Siya ay ang matalik at misteryosong kaibigan ng pangunahing tauhan ng Noli Me Tagere' => 'Elias',
+        'Siya ang ina nina Bsilio at Crispin' => 'Sisa',
+    ];
     private $SynQuestions=[
         'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
         'Ano ang kasingkahulugan ng alaala?' => 'Gunita',
@@ -30,6 +48,7 @@ class BookController extends Controller
         'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
     ];
     private $IdnQuestions=[
+        'Kabuuang pangalan ng nagsulat ng Noli Me Tangere' => 'Jose Protasio Rizal Mercado y Alonso Realonda',
         'Ano?' => 'Good',
         'And your mad?' => 'Bad',
         'hi?' => 'Lonely',
@@ -82,7 +101,7 @@ class BookController extends Controller
         
     }
     public function Home(){
-        $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);
+        $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions, $this->NameQuestions);
         $randttext = array_rand($questions); 
         $randval = $questions[$randttext];
         $text = $randttext;
@@ -184,14 +203,14 @@ class BookController extends Controller
             $questions= $this->AntQuestions;
         }
         elseif($val['type'] == 'Identifications'){
-            $questions= $this->IdnQuestions;
+            $questions= array_merge($this->IdnQuestions, $this->NameQuestions);
         }
         elseif($val['type'] == 'Rankings'){
-            $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);  
+            $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions, $this->NameQuestions, $this->MCNQuestions);  
             $val['quantity'] = count($questions);
         }
         else{
-            $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);  
+            $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions, $this->NameQuestions, $this->MCNQuestions);  
         }
         
 
@@ -215,7 +234,8 @@ class BookController extends Controller
         }        
 
         $allQuestions = array_keys($questions);
-        $allAnswers = array_values($questions);
+        $allAnswers = array_values(array_merge($this->SynQuestions, $this->AntQuestions));
+        $MCNQuestions = array_values($this->MCNQuestions);
         $shuffQuestions = shuff($questions);
         $limitQuestions =[];
         
@@ -230,6 +250,7 @@ class BookController extends Controller
 
         $seedData = [];
         foreach ($limitQuestions as $questionText => $correctAnswer) {
+            $isMCN = rand(0, 1);
             if( array_key_exists($questionText, $this->IdnQuestions)){
                 $seedData[] = [
                     'text' => $questionText,
@@ -237,7 +258,35 @@ class BookController extends Controller
                     'correct_answer' => $correctAnswer,
                     'options' => []
                 ];
-            }  else{
+            }elseif($isMCN && array_key_exists($questionText, $this->NameQuestions)){    
+                $seedData[] = [
+                'text' => $questionText,
+                'type' => 'Identifications',
+                'correct_answer' => $correctAnswer,
+                'options' => []
+                ];
+            }elseif(array_key_exists($questionText, $this->MCNQuestions)){    
+
+                $options = getRandomOptions($correctAnswer, $MCNQuestions);
+                
+                $correctIndex = rand(0,count($options));
+                array_splice($options, $correctIndex, 0, $correctAnswer);
+                shuffle($options);
+                $formattedOptions = [];
+                foreach ($options as $optionText) {
+                    $formattedOptions[] = [
+                        'option_text' => $optionText,
+                        'status' => $optionText === $correctAnswer ? 1 : 0,
+                    ];
+                }
+                $seedData[] = [
+                    'text' => $questionText,
+                    'type' => $val['type'],
+                    'options' => $formattedOptions,
+                ];
+
+        
+            }else{
             $options = getRandomOptions($correctAnswer, $allAnswers);
             
             $correctIndex = rand(0,count($options));
