@@ -17,6 +17,7 @@
         @csrf
         <input type="hidden" name="test_id" value="{{$test->id}}">
         <input type="number" id="int" name="score" value="0"> 
+        <input type="hidden" id="type" name="type" value="{{$test->type}}"> 
     <div class="fullback">
         @foreach ($test->questions as $question)
             <div class="questions" id="container-{{$question->id}}">
@@ -25,7 +26,7 @@
                     @if ($question->type == 'Identifications')
                     <h1>{{ $question->correct_answer }}</h1>
                     <h1>Answer: </h1>
-                        <input type="text" id="Answer-{{$question->id}}" class="identif" name="Answer-{{$question->id}}">
+                        <input type="text" id="Answer-{{$question->id}}" class="identif" name="Answer-{{$question->id}}" required>
                         <button type="button" onclick="check({{$question->id}}, '{{$question->correct_answer}}')">Next</button>
                     @endif
                 </div>
