@@ -22,12 +22,13 @@
             <button type="submit">Bookmark</button>
             </form>
             <div id="bookmarkList">    
+                <div class="bmcontainer">
                 @foreach($bookmark as $bookmarks)
-                    <div>
+                    <div >
                         <a href="#" class="bmlink" data-page="{{$bookmarks->page}}">Page: {{$bookmarks->page}}<a>
                     </div>
                 @endforeach
-                
+                </div>
             </div>
             
         </div>

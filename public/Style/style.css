@@ -33,6 +33,11 @@ body {
     align-items: center;
     background-color: #D2B48C;
 }
+.bmcontainer{
+    max-height: 100px;
+    overflow-y: auto;
+    border-style: solid;
+}
 
 .book {
     position: relative;
