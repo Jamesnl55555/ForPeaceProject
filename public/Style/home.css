@@ -16,7 +16,8 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
 }
-.tfloat{
+
+.tfloat {
     position: absolute;
     display: none;
     padding: 5px;
@@ -41,42 +42,58 @@ header {
     z-index: 10;
 }
 
+nav {
+    display: flex;
+}
+
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     margin-left: 20px;
 }
 
-nav ul li a {
+nav ul li a,
+nav ul li form button {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    padding: 10px 20px;
+    background-color: #5d3a00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
+nav ul li a:hover,
+nav ul li form button:hover {
+    background-color: #704214;
 }
 
-section{
+section {
     position: relative;
     text-align: center;
-    background-color: rgb(179, 212, 177);
+    background-color: rgb(156, 109, 0);
 }
 
 section a {
     text-decoration: none;
-    color:rgb(185, 60, 18);
+    color: rgb(255, 255, 255);
     position: relative;
 }
-.title{
+
+.title {
     display: flex;
     flex-wrap: wrap;
-    color:aqua;
+    color: rgb(60, 35, 0);
 }
-.ftext{
+
+.ftext {
     rotate: 330deg;
     animation: bobbing 2s infinite;
     position: relative;
@@ -85,28 +102,30 @@ section a {
     color: white;
 }
 
-@keyframes bobbing{
-    0%, 100%{
+@keyframes bobbing {
+    0%, 100% {
         font-size: small;
     }
-    50%{
+    50% {
         font-size: large;
     }
 }
 
-footer, footer h1{
-    position:absolute;
+footer,
+footer h1 {
+    position: absolute;
     width: 100%;
     bottom: 0;
     height: 3px;
     background-color: black;
 }
 
-.Text{
-    color: rgb(140, 140, 60);
+.Text {
+    color: rgb(255, 255, 255);
 }
-main{
-    display:flex;
+
+main {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgb(62, 68, 74);

@@ -9,33 +9,30 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo-container">
             <h1>Aklatan</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#books">Dashboard</a></li>
-                <li><a href="#about">Name: {{Auth::user()->name}}</a></li>
-                <li>   
-                    <form action="logout" method="post">
-                    @csrf
-                    <button type="submit">Logout</button>
-                    </form>
-                </li>
+                <!-- <li><form action="#books" method="get"><button type="submit">Dashboard</button></form></li> -->
+                <li><form action="#about" method="get"><button type="submit">Name: {{Auth::user()->name}}</button></form></li>
+                <li><form action="logout" method="post">@csrf<button type="submit">Logout</button></form></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="title">
-        <h7><a href="#" class="ftext" data-answer="{{htmlspecialchars($text, ENT_QUOTES)}}">{{$textval}}</a></h7>
-            <h1 class="Text">Noli Me Tangere</h1>
-        </div>
-    <section id="books">
-        <a href="/nolimetangere"><h1>Pumunta sa aklat</h1></a>
-    </section>
-    <section id="test">
-        <a href="showtest"><h1>Mga hamon</h1></a>
-    </section>
+        <section class="hero">
+            <div class="title">
+                <h2><a href="#" class="ftext" data-answer="{{htmlspecialchars($text, ENT_QUOTES)}}">{{$textval}}</a></h2>
+                <h1 class="Text">Noli Me Tangere</h1>
+            </div>
+        </section>
+        <section id="books">
+            <a href="/nolimetangere"><h1>Pumunta sa aklat</h1></a>
+        </section>
+        <section id="test">
+            <a href="showtest"><h1>Mga hamon</h1></a>
+        </section>
     </main>
     <footer><h1>Ang Aming Grupo</h1></footer>
     <div class="tfloat"><p></p></div>

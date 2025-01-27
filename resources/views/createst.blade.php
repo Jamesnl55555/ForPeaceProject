@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{asset('Style/testtest.css')}}">
+    <title>Magsimula!</title>
 </head>
 <body>
-    <header>Create Test</header>
+    <header>Mga Detalye</header>
     <main>
         <form action="createst" method="POST">
             @csrf
-            <input type= "text" placeholder="Test Name" name="name" required>
+            <input type= "text" placeholder="Pangalan" name="name" required>
             <select name="type" required>
                 <option value="Synonyms">Synonyms</option>
                 <option value="Antonyms">Antonyms</option>
