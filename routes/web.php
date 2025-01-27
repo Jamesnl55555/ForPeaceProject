@@ -24,6 +24,6 @@ Route::middleware('authentication')->group(function (){
     Route::get('/taketest', [BookController::class, 'takeTest'])->name('takeTest');
     Route::post('/createst', [BookController::class, 'createst'])->name('createst');
     Route::post('/response', [BookController::class, 'response'])->name('response');
-    
+    Route::get('/leaderboards', [BookController::class, 'leaderboards'])->name('leaderboards');
     Route::post('logout', [BookController::class, 'logout'])->name('logout');
 });

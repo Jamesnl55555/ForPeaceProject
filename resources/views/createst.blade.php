@@ -17,6 +17,7 @@
                 <option value="Synonyms">Synonyms</option>
                 <option value="Antonyms">Antonyms</option>
                 <option value="Identifications">Identification</option>
+                <option value="Rankings">Rankings</option>
                 <option value="Random">Random</option>
             </select>
             <select name="quantity" required>

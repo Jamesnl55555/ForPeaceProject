@@ -30,12 +30,12 @@ class BookController extends Controller
         'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
     ];
     private $IdnQuestions=[
-        'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
-        'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
-        'Ano ang kasinonimo ng alapaap?' => 'Lupa',
-        'Ano ang kasinonimo ng batid' => 'Di ko alam',
-        'Ano ang kasinonimo ng angal' => 'Gusto',
-        'Ano ang kasinonimo ng leksyon' => 'Wag Aralin'
+        'Ano?' => 'Good',
+        'And your mad?' => 'Bad',
+        'hi?' => 'Lonely',
+        'hello' => 'Happy',
+        'Ano ang expresyon mo' => 'Mad',
+        'Ano ka' => 'Calm'
     ];
     
     public function logout(){
@@ -134,13 +134,25 @@ class BookController extends Controller
         $validated = $request->validate([
             'score' => 'integer'
         ]);
+
         $user = auth()->user();
         $tested = Test::findOrFail($request->test_id);
         $tested->score = $validated['score'];
+        if($request['type'] == 'Rankings'){
+            $user->rank = $validated['score'];
+            $user->save();
+        }
+        
         $tested->save();
         
         $test = $user->tests()->findOrFail($request->test_id);
         return redirect()->route('showTest');
+    }
+
+        
+    public function leaderboards(){
+        $users = User::orderBy('rank', 'desc')->get();
+        return view('leaderboards', compact('users'));
     }
 
     public function showTest(){
@@ -164,15 +176,6 @@ class BookController extends Controller
             'quantity' => 'required'
         ]);
         
-
-        $testId = DB::table('tests')->insertGetId([
-            'name' => $val['name'],
-            'type' => $val['type'],
-            'question_quantity' => $val['quantity'],
-            'user_id' => auth()->id(),
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
         
         if($val['type'] == 'Synonyms'){
             $questions= $this->SynQuestions;
@@ -183,10 +186,23 @@ class BookController extends Controller
         elseif($val['type'] == 'Identifications'){
             $questions= $this->IdnQuestions;
         }
+        elseif($val['type'] == 'Rankings'){
+            $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);  
+            $val['quantity'] = count($questions);
+        }
         else{
             $questions = array_merge($this->SynQuestions, $this->AntQuestions, $this->IdnQuestions);  
         }
         
+
+        $testId = DB::table('tests')->insertGetId([
+            'name' => $val['name'],
+            'type' => $val['type'],
+            'question_quantity' => $val['quantity'],
+            'user_id' => auth()->id(),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
 
         function shuff(array $questions){
             $question = array_keys($questions);
