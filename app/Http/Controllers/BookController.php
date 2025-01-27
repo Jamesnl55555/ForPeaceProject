@@ -38,16 +38,17 @@ class BookController extends Controller
         'Ano ang kasingkahulugan ng alapaap?' => 'Ulap',
         'Ano ang kasingkahulugan ng batid' => 'Alam',
         'Ano ang kasingkahulugan ng angal' => 'Reklamo',
-        'Ano ang kasingkahulugan ng leksyon' => 'Aralin'
+        'Ano ang kasingkahulugan ng leksyon' => 'Aralin',
+        'Ano ang kasingkahulugan ng abalahin' => 'Gambalahin',
     ];
 
     private $AntQuestions=[
-        'Ano ang kasinonimo ng sakuna?' => 'Good Sakuna',
-        'Ano ang kasinonimo ng alaala?' => 'Kinalimutan',
-        'Ano ang kasinonimo ng alapaap?' => 'Lupa',
-        'Ano ang kasinonimo ng batid' => 'Di ko alam',
-        'Ano ang kasinonimo ng angal' => 'Gusto',
-        'Ano ang kasinonimo ng leksyon' => 'Wag Aralin',
+        'Ano ang kasalungat ng maganda?' => 'Pangit',
+        'Ano ang kasalungat ng naalaala?' => 'Kinalimutan',
+        'Ano ang kasalungat ng mabigat?' => 'Magaan',
+        'Ano ang kasalungat ng batid' => 'Di ko alam',
+        'Ano ang kasalungat ng ayaw' => 'Gusto',
+        'Ano ang kasalungat ng meron' => 'Wala',
 
     ];
     private $IdnQuestions=[
@@ -180,7 +181,8 @@ class BookController extends Controller
         
     public function leaderboards(){
         $users = User::orderBy('rank', 'desc')->get();
-        return view('leaderboards', compact('users'));
+        $count = count($users);
+        return view('leaderboards', compact('users', 'count'));
     }
 
     public function showTest(){

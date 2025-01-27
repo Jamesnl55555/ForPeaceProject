@@ -22,8 +22,9 @@
     </header>
     <main>
         <section class="hero">
+            
             <div class="title">
-                <h2><a href="#" class="ftext" data-answer="{{htmlspecialchars($text, ENT_QUOTES)}}">{{$textval}}</a></h2>
+            <i><h2><a href="#" class="ftext" data-answer="{{htmlspecialchars($text, ENT_QUOTES)}}">{{$textval}}</a></h2></i>
                 <h1 class="Text">Noli Me Tangere</h1>
             </div>
         </section>

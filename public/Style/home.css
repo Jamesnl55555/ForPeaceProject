@@ -92,6 +92,9 @@ section a {
     flex-wrap: wrap;
     color: rgb(60, 35, 0);
 }
+i{
+    font-family:'cursive';
+}
 
 .ftext {
     rotate: 330deg;

@@ -1,3 +1,68 @@
-div{
-    border-style: solid;
+body {
+    font-family: 'Georgia', serif;
+    cursor: url('/image/cursor.png') 16 16, pointer;
+    background-color: #f2e2d2;
+    color: #4b2e1d;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6b3c29;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #f4e1c1;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+#first::after{
+    content: "★";
+    color: gold;
+    font-size: 1.2em
+}
+#second::after{
+    content: "★";
+    color: silver;
+    font-size: 1.2em
+}
+#third::after{
+    content: "★";
+    color: rgb(200, 90, 22);
+    font-size: 1.2em
+}
+header .nav a, header .nav .btn {
+    color: #f4e1c1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    background-color: #6b3c29;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .nav a:hover, header .nav .btn:hover {
+    background-color: #d59f69;
+    color: #6b3c29;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f1e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test-card {
+    background-color: #fff;
+    border: 1px solid #d0b59d;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

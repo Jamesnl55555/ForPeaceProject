@@ -15,7 +15,7 @@
             @csrf
             <h1>Register</h1>
             <input type="text" placeholder="Username" name="name" required>
-            <input type="email" placeholder="Email" name="email" required>
+            <input type="email" placeholder="Email" name="email" id="email" required>
             <input type="password" placeholder="Password" name="password" required>
             <input type="password" placeholder="Confirm Password" name="confirm" required>
             <button type="submit">Register</button>
