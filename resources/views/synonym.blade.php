@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('Style/test.css')}}">
     <script src="{{asset('js/test.js')}}" defer></script>
-    <title>Document</title>
+    <title>Synonyms</title>
 </head>
 <body>
     <header>

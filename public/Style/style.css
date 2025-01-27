@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
-}
-body{
+body {
     cursor: url('/image/cursor.png') 16 16, pointer;
+    font-family: Arial, sans-serif;
 }
-#floatext{
+
+#floatext {
     position: absolute;
     padding: 5px;
     background-color: white;
@@ -15,76 +17,80 @@ body{
     pointer-events: none;
     z-index: 1000;
 }
-.hoverables{
-    color:blue;
-}
-.hoverables:hover{
-    color:green;
+
+.hoverables {
+    color: #a44704;
 }
 
-.centercontent{
+.hoverables:hover {
+    color: #FFD700;
+}
+
+.centercontent {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial;
-    background-color: gray;
-} 
+    background-color: #D2B48C;
+}
 
-.book{
-    
+.book {
     position: relative;
     width: 450px;
     height: 600px;
     transition: transform 0.5s;
 }
-.leftsidebar{
+
+.leftsidebar {
     width: 200px;
     height: 100vh;
-    background-color:rgb(111, 81, 20);
+    background-color: #8B4513;
     position: fixed;
     padding: 20px;
-    left:0;
+    left: 0;
+    color: white;
 }
 
-.sidenotes{
-    border-style:solid;
+.sidenotes {
+    border-style: solid;
     width: 200px;
     height: 100vh;
     position: fixed;
-    top:0;
+    top: 0;
+    right: 0;
     text-align: center;
-    right:0;
-    background-color: purple;
+    background-color: #a52f00;
     align-items: center;
     justify-content: center;
     word-wrap: break-word;
+    background-image: url('/image/scroll.png');
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     display: flex;
     padding-top: 10px;
-    background-image: url('/image/scroll.png');
 }
-.hidden{
-    display:none;
+
+.hidden {
+    display: none;
 }
-.leftbar,.bookmarks{
+
+.leftbar,
+.bookmarks {
     text-decoration: none;
     width: 100%;
     display: block;
     border-style: solid;
     text-align: center;
-    color: White;
-    border-color:rgb(128, 75, 6);
-    background-image: linear-gradient(red, green);
-
+    color: white;
+    border-color: #7B3F00;
+    background-image: linear-gradient(#8B4513, #A52A2A);
 }
-.sidenotes p{
+
+.sidenotes p {
     margin-top: 50px;
 }
 
-
-.paper{
+.paper {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -92,49 +98,58 @@ body{
     left: 0;
     pointer-events: auto;
     transform-style: preserve-3d;
-    transition: transform 0.6s; 
+    transition: transform 0.6s;
     perspective: 1500px;
     z-index: 0;
 }
-.paper.flipped .back{
+
+.paper.flipped .back {
     pointer-events: auto;
 }
-.cover{
+
+.cover {
     width: 95%;
     height: 95%;
-    border-style:solid;
-    border-color:rgb(128, 75, 6);
-    display:block;
+    border-style: solid;
+    border-color: #7B3F00;
+    display: block;
 }
-.rizal{
+
+.rizal {
     width: 50%;
     height: 50%;
     margin: 10px;
-    border-style:solid;
-    border-color:rgb(128, 75, 6);
-    display:block;
+    border-style: solid;
+    border-color: #7B3F00;
+    display: block;
 }
-.content{
+
+.content {
     padding: 20px;
-    background-color:rgb(195, 201, 83);
+    background-color: #F4A460;
     width: 95%;
     height: 95%;
     margin: 5px;
 }
-div[class="content"]>h1{
+
+div[class="content"] > h1 {
     font-weight: bold;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
 }
-#ltr::first-letter{
+
+#ltr::first-letter {
     font-weight: bold;
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
     font-size: larger;
 }
-p[class="hoverable"]{
+
+p[class="hoverable"] {
     margin: 0px;
 }
-.front, .back{
-    background-color:rgb(111, 81, 20);
+
+.front,
+.back {
+    background-color: #8B4513;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -144,28 +159,30 @@ p[class="hoverable"]{
     transition: transform 0.5s;
 }
 
-.front{
+.front {
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid rgb(151, 107, 5);
+    border-left: 3px solid #A52A2A;
 }
 
-.back-cont{
-    transform: rotateY(180deg)
+.back-cont {
+    transform: rotateY(180deg);
 }
-.back{
+
+.back {
     z-index: 0;
 }
 
-.front-cont,.back-cont{
-    width:100%;
-    height:100%;
+.front-cont,
+.back-cont {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button{
+button {
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -173,13 +190,15 @@ button{
     transition: transform 0.5s;
 }
 
-button:focus{
-    outline:none;
+button:focus {
+    outline: none;
 }
-button:hover{
-    color:rgb(11, 91, 51)
+
+button:hover {
+    color: #8B4513;
 }
-.flipped .front, 
-.flipped .back{
+
+.flipped .front,
+.flipped .back {
     transform: rotateY(-180deg);
 }

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1eb;
+    color: #3b3b3b;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('https://www.example.com/wood-texture.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: #6a4e23;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #6a4e23;
+    font-size: 1rem;
+}
+
+input, select {
+    background-color: #fff;
+}
+
+button {
+    background-color: #6a4e23;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a3e1a;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #6a4e23;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
