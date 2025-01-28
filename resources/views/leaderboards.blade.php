@@ -14,7 +14,6 @@
     @foreach($users as $i => $user)
         @if($i == 0)
             <div class="test-card" id="first">
-            
             Name: {{$user->name}}
             <br>
             Score: {{$user->rank}}
@@ -27,7 +26,6 @@
             </div>
         @elseif($i == 2)
             <div class="test-card" id="third">
-            
             Name: {{$user->name}}
             <br>
             Score: {{$user->rank}}

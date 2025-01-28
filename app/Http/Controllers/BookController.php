@@ -30,7 +30,7 @@ class BookController extends Controller
         'Siya ay ang matalik at misteryosong kaibigan ng pangunahing tauhan ng Noli Me Tagere' => 'Elias',
         'Siya ang ina ni Basilio' => 'Sisa',
         'Siya ang kapatid ni Basilio' => 'Crispin',
-        'Siya ang itinakdang ipakasal sa minamahal ng pangunahing tauhan ng Noli Me Tangere'
+        'Siya ang itinakdang ipakasal sa minamahal ng pangunahing tauhan ng Noli Me Tangere' => 'Linares'
     ];
     private $SynQuestions=[
         'Ano ang kasingkahulugan ng sakuna?' => 'Aksidente',
